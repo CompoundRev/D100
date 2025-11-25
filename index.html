@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morin Plastic Surgeon - Rhinoplasty</title>
+    <title>Dr. Daria Hamrah - Rhinoplasty Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html {
@@ -15,19 +15,19 @@
         }
         
         .gradient-hero {
-            background: linear-gradient(to bottom right, #A6BBC8, #7a8f9d);
+            background: linear-gradient(to bottom right, #7D736C, #5a524b);
         }
         
-        .gradient-dark {
-            background: linear-gradient(to bottom right, #2C3E50, #1a252f);
+        .gradient-pillars {
+            background: linear-gradient(to bottom right, #7D736C, #4a433e);
         }
         
-        .gradient-light {
-            background: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+        .gradient-note {
+            background: linear-gradient(to bottom right, #7D736C, #5a524b);
         }
         
         .gradient-final {
-            background: linear-gradient(to bottom right, #A6BBC8, #2C3E50);
+            background: linear-gradient(to bottom right, #1F5C63, #7D736C);
         }
         
         .glassmorphism {
@@ -37,7 +37,7 @@
         }
         
         .cta-button {
-            background-color: #2C3E50;
+            background-color: #1F5C63;
             color: white;
             font-weight: bold;
             padding: 1.25rem 2.5rem;
@@ -50,9 +50,22 @@
         }
         
         .cta-button:hover {
-            background-color: #1a252f;
+            background-color: #1a4f56;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             transform: translateY(-2px);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            color: #1F5C63;
+        }
+        
+        .arrow {
+            transition: transform 0.3s ease;
         }
         
         .testimonial-slider {
@@ -68,97 +81,117 @@
             }
         }
         
-        .faq-question {
-            cursor: pointer;
-            transition: all 0.3s ease;
+        .testimonial-slider:hover {
+            animation-play-state: paused;
         }
         
-        .faq-question:hover {
-            color: #2C3E50;
+        img:hover {
+            transform: scale(1.1);
         }
         
-        .arrow {
+        img {
             transition: transform 0.3s ease;
         }
         
-        .underline-accent {
+        .subheadline-underline {
             text-decoration: underline;
-            text-decoration-color: #2C3E50;
+            text-decoration-color: #1F5C63;
             text-decoration-thickness: 2px;
             text-underline-offset: 4px;
         }
     </style>
 </head>
 <body>
-
     <!-- HERO SECTION -->
-    <section class="gradient-hero min-h-screen flex items-center justify-center px-4 py-20">
+    <section class="gradient-hero min-h-screen flex items-center justify-center px-4 py-12">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-white text-sm md:text-base mb-4 opacity-90">If your nose affects your confidence daily and you're looking for an expert who understands natural aesthetics</p>
-            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Reclaim Your Confidence With <span style="color: #2C3E50;">Rhinoplasty</span> That Enhances Your Unique Beauty. Naturally and Permanently</h1>
-            <p class="text-lg md:text-xl text-white mb-8 opacity-90 underline-accent">No scars. Natural Look. Speedy Recovery.</p>
+            <p class="text-white text-sm md:text-base mb-4 opacity-90">If you avoid certain photos, angles, and hairstyles because of your nose and you're finally ready to do something about it.</p>
+            
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+                Stop Hiding Your Profile. <span class="text-[#1F5C63]">Start Loving What You See in Every Photo.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-white mb-8 opacity-90 subheadline-underline">The nose you've always wanted awaits</p>
             
             <div class="mb-8 max-w-3xl mx-auto">
                 <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                    <iframe src="https://www.youtube.com/embed/CS--HwPA28M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 0.5rem; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);"></iframe>
+                    <iframe 
+                        src="https://www.youtube.com/embed/W-Au6XGYcqk" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+                    ></iframe>
                 </div>
-                <a href="https://youtu.be/CS--HwPA28M" target="_blank" class="text-white text-sm mt-2 inline-block opacity-75 hover:opacity-100">Having trouble? Watch on YouTube →</a>
+                <p class="text-white text-sm mt-2 opacity-75">
+                    <a href="https://youtu.be/W-Au6XGYcqk" target="_blank" class="hover:underline">Having trouble? Watch on YouTube →</a>
+                </p>
             </div>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">Book My Consultation Now</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">
+                Yes, I'm Ready to Explore My Options
+            </a>
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
-    <section class="py-20 px-4 bg-white">
+    <section class="bg-white py-16 px-4">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <h2 class="text-2xl md:text-4xl font-bold mb-8 text-center" style="color: #7D736C;">Meet Dr. Daria Hamrah - One of America's Most Trusted Facial Cosmetic Surgeons</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                    <h2 class="text-2xl md:text-4xl font-bold mb-6" style="color: #A6BBC8;">Meet Dr. Robert Morin</h2>
-                    <p class="text-base md:text-lg text-gray-700 mb-4">If you've been searching for a rhinoplasty surgeon you can truly trust, you've found him.</p>
-                    <p class="text-base md:text-lg text-gray-700 mb-4">Dr. Robert Morin is a double board-certified facial plastic surgeon who understands that choosing to have rhinoplasty is a deeply personal decision, one you've likely been thinking about for months or even years.What makes Dr. Morin different is his genuine passion for this work. Rhinoplasty isn't just another procedure for him, it's what he's devoted his career to perfecting.</p>
-                    <p class="text-base md:text-lg text-gray-700 mb-4">Dr. Morin takes the time to really listen. He knows you're not just looking to change your nose, you're looking to feel confident, to stop avoiding cameras, to finally see yourself the way you want to be seen. He'll walk you through every step of the process, answer every question, and make sure you feel completely comfortable and informed before moving forward.</p>
-                    <p class="text-base md:text-lg text-gray-700">You deserve a surgeon who sees you as a person, not a procedure. Dr. Morin is here to help you reclaim your confidence and finally love what you see in the mirror.</p>
+                    <img src="https://i.imgur.com/T3PhMXd.jpeg" alt="Dr. Daria Hamrah" class="w-full h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
                 </div>
-                <div>
-                    <img src="https://i.imgur.com/FTEfyvC.jpeg" alt="Dr. Robert Morin" class="w-full h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
+                
+                <div class="space-y-4">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">With over two decades of experience exclusively focused on facial aesthetics, Dr. Daria Hamrah has built a reputation as one of the nation's leading rhinoplasty specialists. Recognized as a Top Doctor in Facial Cosmetic Surgery in Washington, D.C., and named a Top Oral and Maxillofacial Surgeon by The Washingtonian, Dr. Hamrah is known not just for his technical precision, but for his ability to truly listen and understand what each patient envisions.</p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">As the director of a prestigious fellowship program accredited by the American Academy of Cosmetic Surgery, Dr. Hamrah doesn't just perform rhinoplasty - he trains the next generation of facial surgeons in advanced techniques. His innovative Longevity Facelift approach reflects his commitment to combining cutting-edge surgical methods with long-term facial health and harmony.</p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">Patients travel from across the United States and internationally to work with Dr. Hamrah because they know they're not just getting a skilled surgeon - they're getting an artist who views each face as unique and deserving of a customized approach. His philosophy is simple: your results should look like the best version of you, not like someone else's idea of perfection.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA BUTTON 2 -->
-    <section class="py-16 px-4 gradient-light">
+    <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-12 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">Schedule My Personal Consultation</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">
+                Schedule My Consultation Now
+            </a>
         </div>
     </section>
 
     <!-- VALUE PILLARS SECTION -->
-    <section class="gradient-dark py-20 px-4">
+    <section class="gradient-pillars py-16 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-12">Why People Choose Dr. Morin</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-12">Why People Choose Dr. Hamrah</h2>
+            
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Natural, Undetectable Results</h3>
-                    <p class="text-base md:text-lg text-gray-200">No cookie-cutter noses. Dr. Morin creates results so natural that people just think you look amazing, they won't be able to tell you had surgery. Your nose will finally fit your face perfectly.</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Natural Results, Every Time</h3>
+                    <p class="text-white opacity-90 text-base md:text-lg">Dr. Hamrah's philosophy is simple: enhance your natural features, never alter them. His patients consistently report that friends and family notice they look "refreshed" or "amazing", not "different."</p>
                 </div>
+                
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Advanced Ultrasound Techniques</h3>
-                    <p class="text-base md:text-lg text-gray-200">Using state-of-the-art ultrasound rhinoplasty, Dr. Morin achieves precise corrections with less bruising, less swelling, and faster recovery, so you can get back to your life sooner.</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Industry Leader</h3>
+                    <p class="text-white opacity-90 text-base md:text-lg">As the director of a fellowship program accredited by the American Academy of Cosmetic Surgery, Dr. Hamrah is teaching the next generation of facial surgeons. If other doctors are learning from him, you know you're in expert hands.</p>
                 </div>
+                
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Personalized, Not Templated</h3>
-                    <p class="text-base md:text-lg text-gray-200">Dr. Morin takes the time to understand your unique facial proportions, aesthetic goals, and concerns. He doesn't impose trends, he creates a nose that honors your individuality and enhances your natural beauty.</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Comprehensive, Unhurried Consultations</h3>
+                    <p class="text-white opacity-90 text-base md:text-lg">Dr. Hamrah doesn't believe in 15-minute consultations. He takes the time to understand your concerns, answer every question, and create a customized surgical plan that feels right for you - not a one-size-fits-all approach.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-    <section class="gradient-light py-20 px-4">
+    <section class="bg-gradient-to-b from-white to-gray-50 py-16 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #A6BBC8;">From Self-Conscious to Confident: Patient Stories</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #7D736C;">Real Patients. Natural Results. Life-Changing Confidence.</h2>
             
             <!-- Desktop Slider -->
             <div class="hidden md:block relative overflow-hidden">
@@ -201,82 +234,108 @@
     </section>
 
     <!-- CTA BUTTON 3 -->
-    <section class="py-16 px-4 bg-white">
+    <section class="bg-white py-12 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">Schedule My Personal Consultation</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">
+                Schedule My Consultation Now
+            </a>
         </div>
     </section>
 
     <!-- NOTE FROM DESK SECTION -->
-    <section class="gradient-dark py-20 px-4">
+    <section class="gradient-note py-16 px-4">
         <div class="max-w-4xl mx-auto">
             <div class="glassmorphism p-8 md:p-12 rounded-lg">
-                <img src="https://i.imgur.com/FTEfyvC.jpeg" alt="Dr. Robert Morin" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-xl">
-                <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-8">A Note From the Desk of Dr. Morin</h2>
-                <div class="space-y-4 text-base md:text-lg text-gray-200">
-                    <p>I see you.<br>I've worked with hundreds of patients who felt exactly the way you do right now. You've been thinking about this for months, maybe years. You've scrolled through before-and-after photos late at night. You've wondered if rhinoplasty is really worth it, if the results will look natural, if anyone will notice.</p>
-                    <p>Here's what I want you to know: the decision to have rhinoplasty isn't vain. It's not shallow. If your nose has been affecting your confidence, if you avoid certain angles in photos, if you feel self-conscious in social situations, if you just want to feel like yourself—then addressing it is an act of self-care.</p>
-                    <p>I became a facial plastic surgeon because I believe everyone deserves to feel confident in their own skin. Rhinoplasty is my passion because I've seen firsthand how a natural, beautiful nose can change someone's entire life. Not because their face is different, but because they finally feel free.</p>
-                    <p>My promise to you is this: I will listen. I will take the time to understand your goals, your concerns, and your fears. I will use my years of training and expertise to create a result that fits your face perfectly, one that looks like you were born with it. And I will be with you every step of the way, from consultation through recovery.</p>
-                    <p>You've waited long enough. Let's talk about what's possible.</p>
+                <img src="https://i.imgur.com/T3PhMXd.jpeg" alt="Dr. Daria Hamrah" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-xl">
+                
+                <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-8">Note From the Desk of Dr. Daria Hamrah</h2>
+                
+                <div class="space-y-4">
+                    <p class="text-white text-base md:text-lg leading-relaxed">I see you.  I've worked with hundreds of patients who felt exactly the way you do right now. You've been thinking about this for months, maybe years. You've scrolled through before-and-after photos late at night. You've wondered if it's worth it, if the results will look natural, if anyone will notice.</p>
+                    
+                    <p class="text-white text-base md:text-lg leading-relaxed">The truth is, rhinoplasty isn't just about changing your nose. It's about finally feeling comfortable in your own skin. It's about posting photos without second-guessing the angle. It's about showing up fully, in your career, your relationships, your life, without that nagging self-consciousness.</p>
+                    
+                    <p class="text-white text-base md:text-lg leading-relaxed">I built my practice on one principle: your results should look like the best version of you, not someone else's idea of perfection. If you're ready to explore what's possible, I'd be honored to meet you and create a plan that feels right.</p>
                 </div>
-                <p class="text-xl md:text-2xl text-white text-center mt-8 font-bold">Dr. Robert Morin</p>
+                
+                <p class="text-white text-lg md:text-xl font-semibold text-center mt-8 italic">Let's talk.</p>
             </div>
         </div>
     </section>
 
     <!-- FAQ SECTION -->
-    <section class="py-20 px-4 bg-white">
+    <section class="bg-white py-16 px-4">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #A6BBC8;">Frequently Asked Questions</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #7D736C;">Frequently Asked Questions</h2>
+            
             <div class="space-y-4">
                 <div class="border-b border-gray-200 pb-4">
                     <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-bold" style="color: #A6BBC8;">Will my results look natural, or will people be able to tell I had surgery?</h3>
-                        <span class="arrow text-2xl" style="color: #2C3E50;">▼</span>
+                        <h3 class="text-lg md:text-xl font-semibold" style="color: #7D736C;">How do I know if I'm a good candidate for rhinoplasty?</h3>
+                        <span class="arrow text-2xl" style="color: #1F5C63;">▼</span>
                     </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>Dr. Morin specializes in creating natural, harmonious results that complement your facial features. The goal is for people to think you look great, not to notice you had surgery. He avoids cookie-cutter approaches and focuses on what fits your face.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200 pb-4">
-                    <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-bold" style="color: #A6BBC8;">How long is the recovery, and when can I get back to work?</h3>
-                        <span class="arrow text-2xl" style="color: #2C3E50;">▼</span>
-                    </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>Most patients return to work within 7-10 days. You'll have some swelling and bruising initially, but Dr. Morin uses advanced ultrasound techniques that minimize trauma and speed up recovery. Full results develop over several months as swelling gradually subsides.</p>
+                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
+                        <p>Most healthy adults who are unhappy with the size, shape, or function of their nose are good candidates. During your consultation, Dr. Hamrah will assess your nasal structure, discuss your goals, and determine the best approach for your unique situation.</p>
                     </div>
                 </div>
                 
                 <div class="border-b border-gray-200 pb-4">
                     <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-bold" style="color: #A6BBC8;">Does rhinoplasty hurt?</h3>
-                        <span class="arrow text-2xl" style="color: #2C3E50;">▼</span>
+                        <h3 class="text-lg md:text-xl font-semibold" style="color: #7D736C;">Will my results look natural, or will people know I had surgery?</h3>
+                        <span class="arrow text-2xl" style="color: #1F5C63;">▼</span>
                     </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>Discomfort is typically mild and well-managed with medication. Most patients describe feeling pressure or congestion rather than pain. Dr. Morin prioritizes your comfort throughout the entire process.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200 pb-4">
-                    <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-bold" style="color: #A6BBC8;">Can rhinoplasty improve my breathing as well as my appearance?</h3>
-                        <span class="arrow text-2xl" style="color: #2C3E50;">▼</span>
-                    </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>Absolutely. Dr. Morin often combines aesthetic improvements with functional corrections like fixing a deviated septum. You can breathe better AND look better—it's not one or the other.</p>
+                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
+                        <p>Dr. Hamrah's entire philosophy centers on natural enhancement. His goal is to create a nose that harmonizes beautifully with your other features - so people notice you look great, not that you had work done.</p>
                     </div>
                 </div>
                 
                 <div class="border-b border-gray-200 pb-4">
                     <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-bold" style="color: #A6BBC8;">How much does rhinoplasty cost?</h3>
-                        <span class="arrow text-2xl" style="color: #2C3E50;">▼</span>
+                        <h3 class="text-lg md:text-xl font-semibold" style="color: #7D736C;">How long is the recovery, and when can I return to work?</h3>
+                        <span class="arrow text-2xl" style="color: #1F5C63;">▼</span>
                     </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>Costs vary based on the complexity of your case. During your consultation, you'll receive a detailed breakdown. We work with financing partners to make your transformation accessible and manageable.</p>
+                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
+                        <p>Most patients return to work within 7-10 days. While some residual swelling continues to resolve over several months, the visible recovery period is much shorter than many people expect. Dr. Hamrah will provide a detailed recovery timeline during your consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold" style="color: #7D736C;">Does rhinoplasty hurt?</h3>
+                        <span class="arrow text-2xl" style="color: #1F5C63;">▼</span>
+                    </div>
+                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
+                        <p>Most patients report that rhinoplasty is less painful than they anticipated. You'll receive comprehensive pain management instructions, and any discomfort is typically well-controlled with prescribed medication during the first few days.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold" style="color: #7D736C;">Can rhinoplasty improve my breathing?</h3>
+                        <span class="arrow text-2xl" style="color: #1F5C63;">▼</span>
+                    </div>
+                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
+                        <p>Yes. Many rhinoplasty procedures address both aesthetic and functional concerns. If you have breathing difficulties due to a deviated septum or other structural issues, Dr. Hamrah can often correct these while enhancing the appearance of your nose.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold" style="color: #7D736C;">How much does rhinoplasty cost?</h3>
+                        <span class="arrow text-2xl" style="color: #1F5C63;">▼</span>
+                    </div>
+                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
+                        <p>The cost varies depending on the complexity of your case and your specific goals. During your consultation, you'll receive a transparent, detailed cost breakdown with no hidden fees. Financing options are also available.</p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold" style="color: #7D736C;">How long until I see my final results?</h3>
+                        <span class="arrow text-2xl" style="color: #1F5C63;">▼</span>
+                    </div>
+                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
+                        <p>While you'll notice significant improvement within a few weeks, the nose continues to refine over 6-12 months as residual swelling gradually resolves. Dr. Hamrah will walk you through what to expect at each stage of healing</p>
                     </div>
                 </div>
             </div>
@@ -284,35 +343,37 @@
     </section>
 
     <!-- FINAL CTA SECTION -->
-    <section class="gradient-final py-20 px-4">
+    <section class="gradient-final py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-lg md:text-xl text-white mb-8 leading-relaxed">You've been thinking about this long enough. You've done the research. You've imagined what it would feel like to finally love your profile, to stop avoiding photos, to show up fully in your life. The only thing standing between you and that transformation is taking the first step. Dr. Morin is here to guide you with expertise, compassion, and a commitment to natural, beautiful results. Your consultation is private, personalized, and the beginning of your journey to confidence. Don't wait another year wishing things were different.</p>
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">Book My Consultation Now</a>
+            <p class="text-white text-lg md:text-xl mb-8 leading-relaxed">If you're reading this, you already know you want a change. The fear isn't about wanting it - it's about making sure you choose the right surgeon and get the results you've been picturing. Dr. Hamrah has helped hundreds of patients just like you move from uncertainty to confidence. Your consultation is the first step toward finally loving what you see in the mirror. Let's make it happen.</p>
+            
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">
+                Book My Consultation Today
+            </a>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-800 py-8 px-4 text-center text-white">
-        <p class="text-sm mb-2">Morin Plastic Surgeon - A CompoundRev Marketing Partner</p>
-        <p class="text-xs opacity-75">This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
+    <footer class="bg-[#1e293b] text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2">Dr. Daria Hamrah - A CompoundRev Marketing Partner</p>
+            <p class="text-sm opacity-75">This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
+        </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Start all FAQ answers hidden
             const faqAnswers = document.querySelectorAll('.faq-answer');
             faqAnswers.forEach(answer => {
                 answer.style.display = 'none';
             });
             
-            // Toggle on click
             const faqQuestions = document.querySelectorAll('.faq-question');
             faqQuestions.forEach(question => {
                 question.addEventListener('click', function() {
                     const answer = this.nextElementSibling;
                     const arrow = this.querySelector('.arrow');
                     
-                    // Close all others
                     faqAnswers.forEach(a => {
                         if (a !== answer) {
                             a.style.display = 'none';
@@ -320,7 +381,6 @@
                         }
                     });
                     
-                    // Toggle current
                     if (answer.style.display === 'none') {
                         answer.style.display = 'block';
                         arrow.style.transform = 'rotate(180deg)';
@@ -332,6 +392,5 @@
             });
         });
     </script>
-
 </body>
 </html>
