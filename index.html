@@ -1,36 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZK Noses - Rhinoplasty Specialist</title>
+    <title>Meade Aesthetic Surgery - Rhinoplasty Excellence</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        html {
+            scroll-behavior: smooth;
         }
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-        }
-        
-        .gradient-hero {
-            background: linear-gradient(to bottom right, #0F1A2C, #1a2942);
-        }
-        
-        .gradient-pillars {
-            background: linear-gradient(to bottom right, #0F1A2C, #1a2942);
-        }
-        
-        .gradient-note {
-            background: linear-gradient(to bottom right, #0F1A2C, #1a2942);
-        }
-        
-        .gradient-final {
-            background: linear-gradient(to bottom right, #0F1A2C, #C8A873);
         }
         
         .glassmorphism {
@@ -39,40 +20,13 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .accent-text {
-            color: #C8A873;
-        }
-        
-        .btn-primary {
-            background-color: #C8A873;
-            color: white;
-            font-weight: bold;
-            padding: 1.25rem 2.5rem;
-            font-size: 1.125rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            transition: all 0.3s ease;
-            display: inline-block;
-            text-decoration: none;
-        }
-        
-        .btn-primary:hover {
-            background-color: #b89760;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            transform: translateY(-2px);
-        }
-        
         .testimonial-slider {
-            animation: scroll 20s linear infinite;
+            animation: slide 20s linear infinite;
         }
         
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
         
         .faq-question {
@@ -81,116 +35,98 @@
         }
         
         .faq-question:hover {
-            color: #C8A873;
+            background-color: #f8fafc;
         }
         
         .arrow {
             transition: transform 0.3s ease;
         }
         
-        .underline-accent {
-            text-decoration: underline;
-            text-decoration-color: #C8A873;
-            text-underline-offset: 4px;
+        .cta-button {
+            background-color: #C8A873;
+            transition: all 0.3s ease;
         }
         
-        img {
-            transition: transform 0.3s ease;
-        }
-        
-        img:hover {
-            transform: scale(1.05);
-        }
-        
-        .vsl-placeholder {
-            background-color: #e5e7eb;
-            height: 16rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 0.5rem;
-            color: #6b7280;
-            font-size: 1rem;
-        }
-        
-        @media (min-width: 768px) {
-            .btn-primary {
-                padding: 1.5rem 3rem;
-                font-size: 1.25rem;
-            }
+        .cta-button:hover {
+            background-color: #b89660;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
     </style>
 </head>
-<body>
+<body class="antialiased">
 
     <!-- HERO SECTION -->
-    <section class="gradient-hero min-h-screen flex items-center justify-center px-4 py-20">
+    <section class="min-h-screen bg-gradient-to-br from-[#475D6D] to-[#2d3a45] text-white flex items-center justify-center px-4 py-20">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-white text-sm md:text-base mb-6 opacity-90">For people who've spent years feeling self-conscious about their nose and are ready to finally do something about it.</p>
+            <p class="text-sm md:text-base mb-6 text-gray-200 max-w-3xl mx-auto">If you're tired of avoiding cameras and hiding your profile, but terrified of looking "done",you're in the right place.</p>
             
-            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Reclaim Your Confidence: A Nose So <span class="accent-text">Natural</span>, People Will Only Notice How Good You Look.
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                You Deserve a Nose That Brings You <span style="color: #C8A873;">Confidence</span>, Not Constant Self-Consciousness
             </h1>
             
-            <p class="text-lg md:text-xl text-gray-200 mb-8 underline-accent">No scars. Natural Look. Speedy Recovery</p>
+            <p class="text-lg md:text-xl mb-8 text-gray-300 border-b-2 border-[#C8A873] inline-block pb-2">Natural, balanced rhinoplasty crafted with precision, artistry, and 17 years' expertise.</p>
             
-            <div class="mb-8">
-                <div class="vsl-placeholder">
-                    <!-- Add YouTube embed URL in PROJECT RECAP section before generating -->
+            <div class="mb-10 max-w-3xl mx-auto">
+                <div class="vsl-placeholder bg-gray-700 h-64 md:h-96 flex items-center justify-center rounded-lg shadow-2xl">
+                    <p class="text-gray-400">Video Section - Add YouTube embed URL in project recap</p>
                 </div>
             </div>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="btn-primary">Book My Consultation</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl">
+                Book My Consultation Now
+            </a>
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="py-20 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #0F1A2C;">Meet Your Surgeon</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #475D6D;">Meet Dr. Ricardo Meade - Board-Certified Excellence in Rhinoplasty</h2>
             
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://i.imgur.com/AIpyrtx.png" alt="Dr. Ziad Katrib" class="w-full h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
+                    <img src="https://i.imgur.com/yFm3jBA.png" alt="Dr. Ricardo Meade" class="w-full h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
                 </div>
                 
                 <div class="space-y-6">
-                    <p class="text-base md:text-lg text-gray-700">Dr. Ziad Katrib is one of the few U.S. surgeons whose entire practice is dedicated to rhinoplasty and revision rhinoplasty. Performing 200–300 procedures each year, he has developed a rare level of precision and pattern recognition that only comes from deep specialization. He is dual board-certified in Facial Plastic Surgery and Otolaryngology and completed advanced fellowship training under internationally respected surgeon Dr. Edwin Williams.</p>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">When you're trusting someone with your face, credentials matter. Dr. Ricardo Meade is a board-certified plastic surgeon with over 17 years of dedicated experience in facial aesthetic surgery. He's been recognized as a Castle Connolly Top Doctor for ten consecutive years, a distinction reserved for surgeons who demonstrate exceptional skill, outcomes, and patient care.</p>
                     
-                    <p class="text-base md:text-lg text-gray-700">With a background in both cosmetic artistry and complex reconstructive surgery, Dr. Katrib is known for solving cases other surgeons refer out — from difficult revisions to structural breathing issues and ethnic rhinoplasty requiring cultural nuance. His philosophy is simple: noses that look good should also breathe well, and true aesthetic balance requires both.</p>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">But beyond the accolades, Dr. Meade understands something crucial: rhinoplasty isn't just about reshaping cartilage and bone. It's about restoring confidence, preserving your identity, and creating results that look like they've always belonged on your face. His dual focus on aesthetic refinement and functional restoration means you don't have to choose between beauty and breathing - you get both.</p>
                     
-                    <p class="text-base md:text-lg text-gray-700">Patients choose Dr. Katrib because he sees more than a nose — he sees the person behind it. He understands the emotional weight of this decision and focuses on creating natural, individualized results that restore confidence without ever looking overdone.</p>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">Dr. Meade's patient-first philosophy means every consultation is deeply personal. He listens to your concerns, respects your vision, and uses advanced surgical techniques to deliver natural, balanced results that photograph beautifully from every angle. When you're ready to stop hiding and start living fully, Dr. Meade is ready to guide you there.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA BUTTON 2 -->
-    <section class="py-16 px-4 bg-gradient-to-r from-gray-50 to-gray-100">
+    <section class="py-16 px-4 bg-gradient-to-r from-[#475D6D] to-[#C8A873]">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="btn-primary">Book My Free Consult Now</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl">
+                Book My Personal Assessment
+            </a>
         </div>
     </section>
 
     <!-- VALUE PILLARS SECTION -->
-    <section class="gradient-pillars py-20 px-4">
+    <section class="py-20 px-4 bg-gradient-to-br from-[#475D6D] to-[#2d3a45] text-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center text-white mb-16">Why People Choose Dr. Katrib</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16">WHY PEOPLE CHOOSE DR. MEADE</h2>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Rhinoplasty Specialization</h3>
-                    <p class="text-gray-200 text-base md:text-lg">Unlike general plastic surgeons who perform dozens of different procedures, Dr. Katrib focuses exclusively on rhinoplasty and revision rhinoplasty - 200-300 cases per year. This singular dedication means he's seen and solved nearly every nasal anatomy challenge, giving you the benefit of true expertise.</p>
+                <div class="glassmorphism p-8 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4" style="color: #C8A873;">Natural-Looking Results</h3>
+                    <p class="text-base md:text-lg text-gray-200">Dr. Meade's approach focuses on enhancing your features, not erasing them. His patients leave looking refreshed and balanced - never overdone or obviously "worked on."</p>
                 </div>
                 
-                <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Function AND Beauty</h3>
-                    <p class="text-gray-200 text-base md:text-lg">Dr. Katrib's dual training in otolaryngology and facial plastic surgery means he can address both breathing problems and aesthetic concerns in a single procedure. If you've struggled with a deviated septum or chronic congestion alongside cosmetic dissatisfaction, you finally have a surgeon who can fix both.</p>
+                <div class="glassmorphism p-8 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4" style="color: #C8A873;">Dual Focus: Beauty + Function</h3>
+                    <p class="text-base md:text-lg text-gray-200">Whether you need cosmetic refinement, breathing correction, or both, Dr. Meade's training allows him to address aesthetic and functional concerns in a single, comprehensive surgery.</p>
                 </div>
                 
-                <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Comprehensive Visualization</h3>
-                    <p class="text-gray-200 text-base md:text-lg">Through advanced 3D imaging technology, you'll see a realistic prediction of your potential results before surgery. This takes the guesswork out of the process and ensures you and Dr. Katrib are perfectly aligned on your aesthetic goals.</p>
+                <div class="glassmorphism p-8 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4" style="color: #C8A873;">Advanced Surgical Techniques</h3>
+                    <p class="text-base md:text-lg text-gray-200">Dr. Meade uses both open and closed rhinoplasty approaches, selecting the method that best serves your unique anatomy and goals for optimal, lasting results.</p>
                 </div>
             </div>
         </div>
@@ -199,44 +135,44 @@
     <!-- TESTIMONIALS SECTION -->
     <section class="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16" style="color: #0F1A2C;">From Self-Conscious to Unstoppable: Stories of Transformation</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16" style="color: #475D6D;">People Just Like You Who Finally Love Their Reflection</h2>
             
             <!-- Desktop Slider -->
             <div class="hidden md:block relative overflow-hidden">
                 <div class="testimonial-slider flex">
                     <div class="flex-shrink-0 w-96 h-64 mx-4">
-                        <img src="https://i.imgur.com/ED7qwXP.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
+                        <img src="https://i.imgur.com/LlEytKU.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
                     </div>
                     <div class="flex-shrink-0 w-96 h-64 mx-4">
-                        <img src="https://i.imgur.com/1GshLpo.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
+                        <img src="https://i.imgur.com/V22d8ME.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
                     </div>
                     <div class="flex-shrink-0 w-96 h-64 mx-4">
-                        <img src="https://i.imgur.com/veXg2nW.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
+                        <img src="https://i.imgur.com/8qphFGd.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
                     </div>
                     <div class="flex-shrink-0 w-96 h-64 mx-4">
-                        <img src="https://i.imgur.com/HRcJcnd.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
+                        <img src="https://i.imgur.com/QSj39yW.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
                     </div>
                     <div class="flex-shrink-0 w-96 h-64 mx-4">
-                        <img src="https://i.imgur.com/ED7qwXP.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
+                        <img src="https://i.imgur.com/LlEytKU.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
                     </div>
                     <div class="flex-shrink-0 w-96 h-64 mx-4">
-                        <img src="https://i.imgur.com/1GshLpo.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
+                        <img src="https://i.imgur.com/V22d8ME.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
                     </div>
                     <div class="flex-shrink-0 w-96 h-64 mx-4">
-                        <img src="https://i.imgur.com/veXg2nW.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
+                        <img src="https://i.imgur.com/8qphFGd.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
                     </div>
                     <div class="flex-shrink-0 w-96 h-64 mx-4">
-                        <img src="https://i.imgur.com/HRcJcnd.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
+                        <img src="https://i.imgur.com/QSj39yW.jpeg" alt="Patient testimonial" class="w-full h-full object-cover rounded-lg shadow-xl">
                     </div>
                 </div>
             </div>
             
             <!-- Mobile Stack -->
             <div class="md:hidden grid grid-cols-2 gap-4">
-                <img src="https://i.imgur.com/ED7qwXP.jpeg" alt="Patient testimonial" class="w-full h-auto object-cover rounded-lg shadow-xl" style="aspect-ratio: 3/4;">
-                <img src="https://i.imgur.com/1GshLpo.jpeg" alt="Patient testimonial" class="w-full h-auto object-cover rounded-lg shadow-xl" style="aspect-ratio: 3/4;">
-                <img src="https://i.imgur.com/veXg2nW.jpeg" alt="Patient testimonial" class="w-full h-auto object-cover rounded-lg shadow-xl" style="aspect-ratio: 3/4;">
-                <img src="https://i.imgur.com/HRcJcnd.jpeg" alt="Patient testimonial" class="w-full h-auto object-cover rounded-lg shadow-xl" style="aspect-ratio: 3/4;">
+                <img src="https://i.imgur.com/LlEytKU.jpeg" alt="Patient testimonial" class="w-full h-auto object-cover rounded-lg shadow-xl" style="aspect-ratio: 3/4;">
+                <img src="https://i.imgur.com/V22d8ME.jpeg" alt="Patient testimonial" class="w-full h-auto object-cover rounded-lg shadow-xl" style="aspect-ratio: 3/4;">
+                <img src="https://i.imgur.com/8qphFGd.jpeg" alt="Patient testimonial" class="w-full h-auto object-cover rounded-lg shadow-xl" style="aspect-ratio: 3/4;">
+                <img src="https://i.imgur.com/QSj39yW.jpeg" alt="Patient testimonial" class="w-full h-auto object-cover rounded-lg shadow-xl" style="aspect-ratio: 3/4;">
             </div>
         </div>
     </section>
@@ -244,29 +180,27 @@
     <!-- CTA BUTTON 3 -->
     <section class="py-16 px-4 bg-white">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="btn-primary">Book My Free Consult Now</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl">
+                Book My Personal Assessment
+            </a>
         </div>
     </section>
 
     <!-- NOTE FROM DESK SECTION -->
-    <section class="gradient-note py-20 px-4">
+    <section class="py-20 px-4 bg-gradient-to-br from-[#475D6D] to-[#2d3a45] text-white">
         <div class="max-w-4xl mx-auto">
-            <div class="glassmorphism p-8 md:p-12 rounded-lg">
-                <img src="https://i.imgur.com/AIpyrtx.png" alt="Dr. Ziad Katrib" class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
+            <div class="glassmorphism p-10 md:p-16 rounded-lg">
+                <img src="https://i.imgur.com/jJrHnCq.png" alt="Dr. Ricardo Meade" class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
                 
-                <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-8">Note from the Desk of Dr. Ziad Katrib</h2>
+                <h2 class="text-2xl md:text-4xl font-bold text-center mb-8" style="color: #C8A873;">A NOTE FROM THE DESK OF DR. RICARDO MEADE</h2>
                 
-                <div class="space-y-6 text-gray-200 text-base md:text-lg">
-                    <p>If you've been considering rhinoplasty for months or years, you're not alone. Most of my patients have been thinking about this decision for a long time - researching surgeons, weighing their options, wondering if they'll regret it or if they'll regret NOT doing it.</p>
+                <div class="space-y-6">
+                    <p class="text-base md:text-lg text-gray-200 leading-relaxed">I see you. I've worked with hundreds of patients who felt exactly the way you do right now. People who've spent months (sometimes years) scrolling through before-and-after photos, reading reviews, and wondering if rhinoplasty is really worth it. The truth is, if you're reading this, you already know the answer. You're just looking for the right person to trust with something this important.</p>
                     
-                    <p>Here's the truth: rhinoplasty isn't just about changing your nose. It's about ending the exhausting habit of checking your reflection from every angle, avoiding certain photos, turning your head just right in group settings. It's about reclaiming the mental energy you've been spending on something that can actually be fixed.</p>
-                    
-                    <p>I believe in results that look like they were always meant to be. No Instagram cookie-cutter noses. No "work" that screams surgical intervention. Just harmony, balance, and a version of you that breathes easily and photographs confidently. My dual training in both functional and aesthetic nasal surgery means I can address the whole picture - not just how you look, but how you breathe and how you feel.</p>
-                    
-                    <p>You deserve a surgeon who sees you as a whole person, not just a procedure. When you're ready, I'm here to help you take the next step toward the confidence you've been waiting for.</p>
-                    
-                    <p class="text-right italic mt-8 accent-text font-semibold text-xl">Dr. Ziad Katrib</p>
+                    <p class="text-base md:text-lg text-gray-200 leading-relaxed">I want you to know that my job isn't to talk you into surgery. It's to listen to what's been bothering you, understand your vision, and help you decide if rhinoplasty is truly the right choice for you. If it is, I'll use every bit of my training and experience to create a result that feels like it's always belonged on your face; naturally refined, beautifully balanced, and completely you. You deserve to love what you see in the mirror. Let's talk about how to get you there.</p>
                 </div>
+                
+                <p class="text-right mt-8 text-lg md:text-xl font-bold" style="color: #C8A873;"></p>
             </div>
         </div>
     </section>
@@ -274,56 +208,66 @@
     <!-- FAQ SECTION -->
     <section class="py-20 px-4 bg-white">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16" style="color: #0F1A2C;">Frequently Asked Questions</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16" style="color: #475D6D;">Frequently Asked Questions</h2>
             
             <div class="space-y-4">
-                <div class="border-b border-gray-200 pb-4">
-                    <div class="faq-question flex justify-between items-center py-4" style="color: #0F1A2C;">
-                        <h3 class="text-lg md:text-xl font-semibold pr-8">How long does it really take to look normal after rhinoplasty?</h3>
-                        <span class="arrow text-2xl flex-shrink-0" style="color: #C8A873;">▼</span>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-bold" style="color: #475D6D;">How do I know if I'm a good candidate for rhinoplasty?</h3>
+                        <span class="arrow text-2xl" style="color: #C8A873;">▼</span>
                     </div>
-                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
-                        <p>Most patients feel comfortable in public within 10-14 days once the splint and visible bruising are gone. Swelling gradually reduces over 6-12 months, but you'll look like yourself - just refined - much sooner than you think.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200 pb-4">
-                    <div class="faq-question flex justify-between items-center py-4" style="color: #0F1A2C;">
-                        <h3 class="text-lg md:text-xl font-semibold pr-8">Can you fix both my breathing problems and the shape of my nose?</h3>
-                        <span class="arrow text-2xl flex-shrink-0" style="color: #C8A873;">▼</span>
-                    </div>
-                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
-                        <p>Absolutely. Dr. Katrib's dual board certification in both otolaryngology and facial plastic surgery means he routinely combines functional septoplasty with aesthetic rhinoplasty in a single procedure - addressing both concerns at once.</p>
+                    <div class="faq-answer p-6 pt-0 text-base md:text-lg text-gray-700">
+                        If you're in good overall health, have realistic expectations, and have concerns about the shape, size, or function of your nose, you're likely a candidate. During your consultation, Dr. Meade will assess your anatomy, discuss your goals, and determine the best approach for your unique needs.
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200 pb-4">
-                    <div class="faq-question flex justify-between items-center py-4" style="color: #0F1A2C;">
-                        <h3 class="text-lg md:text-xl font-semibold pr-8">I want refinement, but I don't want to lose my ethnic features. Is that possible?</h3>
-                        <span class="arrow text-2xl flex-shrink-0" style="color: #C8A873;">▼</span>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-bold" style="color: #475D6D;">Will my results look natural, or will people know I had surgery?</h3>
+                        <span class="arrow text-2xl" style="color: #C8A873;">▼</span>
                     </div>
-                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
-                        <p>Yes. Dr. Katrib specializes in ethnic rhinoplasty that honors your cultural identity while achieving the balance and proportion you desire. The goal is to enhance your natural beauty, not erase your heritage.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200 pb-4">
-                    <div class="faq-question flex justify-between items-center py-4" style="color: #0F1A2C;">
-                        <h3 class="text-lg md:text-xl font-semibold pr-8">How do I know if Dr. Katrib is the right surgeon for me?</h3>
-                        <span class="arrow text-2xl flex-shrink-0" style="color: #C8A873;">▼</span>
-                    </div>
-                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
-                        <p>The best way is to schedule a consultation. You'll discuss your goals, see 3D imaging of potential outcomes, review before-and-after cases similar to yours, and get a clear sense of whether his approach aligns with your vision.</p>
+                    <div class="faq-answer p-6 pt-0 text-base md:text-lg text-gray-700">
+                        Dr. Meade's philosophy is to enhance, not erase. His goal is to create results that look like they've always belonged on your face - balanced, proportional, and beautifully natural. Most patients hear comments like "you look refreshed" rather than "you had work done."
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200 pb-4">
-                    <div class="faq-question flex justify-between items-center py-4" style="color: #0F1A2C;">
-                        <h3 class="text-lg md:text-xl font-semibold pr-8">How much does rhinoplasty cost, and is financing available?</h3>
-                        <span class="arrow text-2xl flex-shrink-0" style="color: #C8A873;">▼</span>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-bold" style="color: #475D6D;">How long is the recovery, and when can I return to work?</h3>
+                        <span class="arrow text-2xl" style="color: #C8A873;">▼</span>
                     </div>
-                    <div class="faq-answer text-gray-700 text-base md:text-lg pl-4">
-                        <p>Pricing varies based on the complexity of your case (primary vs. revision, functional components, etc.). During your consultation, you'll receive a detailed quote. Financing options are available to make your investment manageable.</p>
+                    <div class="faq-answer p-6 pt-0 text-base md:text-lg text-gray-700">
+                        Most patients return to work within 7-10 days. Swelling and bruising improve significantly within the first two weeks. You'll see noticeable improvement by 4-6 weeks, with continued refinement over the following months. Final results are typically visible by 12 months.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-bold" style="color: #475D6D;">Can rhinoplasty improve my breathing as well as my appearance?</h3>
+                        <span class="arrow text-2xl" style="color: #C8A873;">▼</span>
+                    </div>
+                    <div class="faq-answer p-6 pt-0 text-base md:text-lg text-gray-700">
+                        Absolutely. Dr. Meade frequently combines functional corrections (like septoplasty) with aesthetic refinement in a single procedure, so you don't have to choose between breathing better and looking better.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-bold" style="color: #475D6D;">Will I lose my ethnic identity or unique features?</h3>
+                        <span class="arrow text-2xl" style="color: #C8A873;">▼</span>
+                    </div>
+                    <div class="faq-answer p-6 pt-0 text-base md:text-lg text-gray-700">
+                        Not at all. Dr. Meade takes an ethnically sensitive approach that respects and preserves your cultural identity. The goal is refinement that honors your heritage, not transformation that erases it.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-bold" style="color: #475D6D;">How much does rhinoplasty cost?</h3>
+                        <span class="arrow text-2xl" style="color: #C8A873;">▼</span>
+                    </div>
+                    <div class="faq-answer p-6 pt-0 text-base md:text-lg text-gray-700">
+                        Cost varies based on the complexity of your procedure and your specific goals. During your consultation, Dr. Meade will provide a detailed quote and discuss financing options to make your investment manageable.
                     </div>
                 </div>
             </div>
@@ -331,18 +275,22 @@
     </section>
 
     <!-- FINAL CTA SECTION -->
-    <section class="gradient-final py-20 px-4">
+    <section class="py-20 px-4 bg-gradient-to-br from-[#475D6D] via-[#C8A873] to-[#475D6D] text-white">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-lg md:text-xl text-white mb-8 leading-relaxed">You've been thinking about this long enough. The research phase is over. Now it's time to meet the surgeon who can turn those late-night before-and-after scrolling sessions into your own transformation story. Dr. Katrib's calendar fills quickly, but your consultation is the first step toward finally feeling like the person you see in your mind matches the person you see in every photo. No pressure. No judgment. Just honest answers and a clear path forward.</p>
+            <p class="text-lg md:text-xl mb-10 leading-relaxed">If you're reading this, you already know what you want. The question isn't whether rhinoplasty is right for you, it's whether you're ready to finally do something about it. Dr. Meade has helped hundreds of patients just like you take this step, and every single one started exactly where you are now: hopeful, a little nervous, and ready for change. Your consultation is the first step toward looking in the mirror and feeling nothing but relief. Don't wait another year wishing things were different. Let's talk.</p>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="btn-primary">Schedule My Consultation Today</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl">
+                Book My Consultation Now
+            </a>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-12 px-4 text-center text-gray-400 text-sm" style="background-color: #1e293b;">
-        <p class="mb-4">ZK Noses - A CompoundRev Marketing Partner</p>
-        <p class="max-w-4xl mx-auto">This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
+    <footer class="bg-[#1e293b] text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-base md:text-lg mb-4">Meade Aesthetic Surgery - A CompoundRev Marketing Partner</p>
+            <p class="text-sm text-gray-400">This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
+        </div>
     </footer>
 
     <script>
