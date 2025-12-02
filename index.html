@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trillium Oral Surgery - All-on-4 Dental Implants</title>
+    <title>Arbor Family Dentistry - All-on-X Dental Implants</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html {
@@ -15,19 +15,19 @@
         }
         
         .gradient-hero {
-            background: linear-gradient(to bottom right, #4A6785, #2d3f52);
+            background: linear-gradient(to bottom right, #3E5E44, #2a4030);
         }
         
         .gradient-pillars {
-            background: linear-gradient(to bottom right, #4A6785, #1a2633);
+            background: linear-gradient(to bottom right, #3E5E44, #2a4030);
         }
         
         .gradient-note {
-            background: linear-gradient(to bottom right, #4A6785, #2d3f52);
+            background: linear-gradient(to bottom right, #3E5E44, #2a4030);
         }
         
         .gradient-final {
-            background: linear-gradient(to bottom right, #4A6785, #C9A877);
+            background: linear-gradient(to bottom right, #3E5E44, #C8A86A);
         }
         
         .glassmorphism {
@@ -37,11 +37,11 @@
         }
         
         .cta-button {
-            background-color: #C9A877;
+            background-color: #C8A86A;
             color: white;
             font-weight: bold;
             padding: 1.25rem 2.5rem;
-            font-size: 1.125rem;
+            font-size: 1.25rem;
             border-radius: 0.5rem;
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             transition: all 0.3s ease;
@@ -50,8 +50,9 @@
         }
         
         .cta-button:hover {
+            background-color: #b89858;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            background-color: #b89866;
+            transform: translateY(-2px);
         }
         
         .faq-question {
@@ -60,29 +61,46 @@
         }
         
         .faq-question:hover {
-            color: #4A6785;
+            color: #3E5E44;
         }
         
         .arrow {
             transition: transform 0.3s ease;
         }
         
-        .testimonial-card {
-            background: white;
-            border-radius: 0.75rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            transition: transform 0.3s ease;
+        .testimonial-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
         }
         
-        .testimonial-card:hover {
-            transform: translateY(-5px);
+        .testimonial-slider::-webkit-scrollbar {
+            display: none;
         }
         
-        @media (max-width: 768px) {
-            .cta-button {
-                padding: 1rem 2rem;
-                font-size: 1rem;
+        .testimonial-slide {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
+        
+        @media (min-width: 768px) {
+            .testimonial-slider {
+                animation: scroll 20s linear infinite;
+            }
+            
+            .testimonial-slider:hover {
+                animation-play-state: paused;
+            }
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
             }
         }
     </style>
@@ -92,161 +110,242 @@
     <!-- HERO SECTION -->
     <section class="gradient-hero min-h-screen flex items-center justify-center px-4 py-20">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-white text-sm md:text-base mb-4 opacity-90">If you've been living with missing teeth or failing dentures and want your confidence back</p>
-            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Finally Eat What You Want, Smile Without Hiding, and <span style="color: #C9A877;">Feel Like Yourself Again</span></h1>
-            <p class="text-lg md:text-xl text-white mb-8 opacity-90"><span class="border-b-2 border-white pb-1">Advanced implant technology from Michigan's most trusted oral surgeons</span></p>
+            <p class="text-white text-sm md:text-base mb-6 opacity-90">For adults 45+ who are tired of living around missing teeth or uncomfortable dentures</p>
+            
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Finally Eat What You Love, Smile Without Hiding, and Feel Like <span style="color: #C8A86A;">Yourself Again</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-white mb-8 opacity-90">
+                <span class="border-b-2 border-white pb-1">Permanent results that last decades, not temporary fixes that fail.</span>
+            </p>
             
             <div class="mb-8 max-w-3xl mx-auto">
                 <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                    <iframe src="https://www.youtube.com/embed/cV8RFaXGepc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"></iframe>
+                    <iframe 
+                        src="https://www.youtube.com/embed/xzyj9kLLN40" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+                    ></iframe>
                 </div>
-                <p class="text-white text-sm mt-3 opacity-75">Having trouble? <a href="https://youtu.be/cV8RFaXGepc" target="_blank" class="underline hover:opacity-100">Watch on YouTube →</a></p>
+                <p class="text-white text-sm mt-4 opacity-75">
+                    <a href="https://youtu.be/xzyj9kLLN40" target="_blank" class="hover:underline">Having trouble? Watch on YouTube →</a>
+                </p>
             </div>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">Schedule My Free Consultation</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">
+                Claim My Free Consultation Now
+            </a>
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
-    <section class="bg-white py-20 px-4">
+    <section class="py-20 px-4 bg-white">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #4A6785;">Dr. Norman Betts, DDS, MS</h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="text-center md:text-left order-2 md:order-1">
-                    <p class="text-base md:text-lg text-gray-700 mb-6">Dr. Norman Betts is one of Southeast Michigan's most experienced oral and maxillofacial surgeons, with over 30 years specializing in complex implant cases including All-on-4 full arch restorations. His training at the University of Michigan Medical Center, one of the nation's top surgical programs, prepared him to handle even the most challenging cases with precision and confidence.</p>
-                    <p class="text-base md:text-lg text-gray-700 mb-6">Beyond his clinical work, Dr. Betts has shaped the future of oral surgery as an associate professor and department chair at the University of Michigan Health System Hospital of Dentistry. This teaching background means he stays at the forefront of surgical innovation and holds himself to the highest academic standards.</p>
-                    <p class="text-base md:text-lg text-gray-700">Patients choose Dr. Betts because he combines elite credentials with genuine compassion. He takes time to thoroughly explain your treatment plan, answer every question, and ensure you feel confident and comfortable every step of the way. Available at our Chelsea and Ann Arbor offices, Dr. Betts is ready to help you reclaim your smile with the expert care you deserve.</p>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #3E5E44;">Meet Your Surgeon</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <img src="https://i.imgur.com/rLvuAX2.jpeg" alt="Dr. Ton" class="w-64 h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
                 </div>
-                <div class="order-1 md:order-2">
-                    <img src="https://i.imgur.com/Fi5SGYG.png" alt="Dr. Norman Betts" class="w-full max-w-md h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
+                
+                <div class="md:w-2/3 space-y-6">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        Dr. Ton is a trusted, highly skilled dentist serving the Brentwood community with a rare combination of expertise, integrity, and genuine compassion. Patients choose him because he delivers meticulous, conservative care in an environment designed to feel calm, personal, and never rushed.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        He founded Arbor Family Dental with a simple mission: to give families the kind of ethical, attentive treatment he would want for his own loved ones. At a time when corporate dental chains push high-volume, assembly-line care, Dr. Ton remains committed to a small, patient-centered practice where quality, transparency, and human connection come first. If you've been searching for a dentist who truly listens and prioritizes your long-term health, Arbor Dental was built for you.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        Dr. Ton earned his B.S. from the University of California, Davis and his Doctor of Dental Surgery from the University of California, San Francisco. He is an active member of the American Academy of Cosmetic Dentistry, continually sharpening his artistic and technical skills to deliver natural, confident, long-lasting results. Outside the practice, you'll find him spending time with his family, hiking, playing tennis, or paddle boarding along the delta.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        A passionate supporter of the community, Dr. Ton donates to organizations including Give Back a Smile, the Red Cross, the Breast Cancer Society, the Animal Humane Society, and local food banks. He mentors high-school students through the Outreach Conference, helping guide their career paths. In recognition of his service, he received a community award in 2012—reflecting not just his professional ability, but his deep commitment to giving back.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA BUTTON 2 -->
-    <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-4">
-        <div class="text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">Schedule My Appointment Today</a>
+    <section class="py-16 px-4 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">
+                Get My Free Consultation
+            </a>
         </div>
     </section>
 
     <!-- VALUE PILLARS SECTION -->
     <section class="gradient-pillars py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center text-white mb-16">Why People Choose Trillium Oral Surgery</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center text-white mb-16">Why People Choose Arbor Family Dentistry</h2>
+            
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="glassmorphism rounded-xl p-8 hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Same-Day Teeth, Lifetime Results</h3>
-                    <p class="text-white opacity-90">Walk in with missing or failing teeth and leave the same day with a complete, functional smile. All-on-4 technology allows us to give you permanent teeth without the months of waiting other procedures require.</p>
+                <div class="glassmorphism rounded-lg p-8 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Comfort-Focused Care</h3>
+                    <p class="text-white opacity-90 leading-relaxed">We offer multiple sedation options to ensure you're relaxed and pain-free throughout the procedure. Many patients tell us the anticipation was worse than the actual experience - we make sure you're comfortable every step of the way.</p>
                 </div>
-                <div class="glassmorphism rounded-xl p-8 hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Comfort-First Sedation Options</h3>
-                    <p class="text-white opacity-90">We understand dental anxiety is real. Our advanced sedation protocols ensure you're completely comfortable throughout the procedure - many patients tell us it was easier than they ever imagined.</p>
+                
+                <div class="glassmorphism rounded-lg p-8 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Natural-Looking, Custom Results</h3>
+                    <p class="text-white opacity-90 leading-relaxed">Your new teeth are digitally designed to match your facial structure, age, and preferences. They look natural, feel secure, and function just like your original teeth used to - no one will know unless you tell them.</p>
                 </div>
-                <div class="glassmorphism rounded-xl p-8 hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">State-of-the-Art Technology</h3>
-                    <p class="text-white opacity-90">From 3D imaging and digital planning to precision-guided placement, we use the most advanced tools available to ensure accurate, predictable results. Technology matters when it comes to implants that last decades.</p>
+                
+                <div class="glassmorphism rounded-lg p-8 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Lifetime Support and Follow-Up</h3>
+                    <p class="text-white opacity-90 leading-relaxed">Your relationship with us doesn't end when you leave the chair. We provide ongoing care, regular check-ins, and are always available if you have questions or concerns about your implants.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-    <section class="bg-gradient-to-br from-gray-50 to-white py-20 px-4">
+    <section class="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16" style="color: #4A6785;">Michigan Residents Who Got Their Confidence Back</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="testimonial-card">
-                    <div class="text-4xl mb-4" style="color: #C9A877;">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700">I spent five years avoiding cameras and covering my mouth when I laughed. Dr. Betts and his team gave me my confidence back. The procedure was so much easier than I expected, and my implants look completely natural. I actually smile in photos now.</p>
-                    <p class="font-semibold text-gray-800">- Jennifer K.</p>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16" style="color: #3E5E44;">See What's Possible When You Stop Waiting</h2>
+            
+            <!-- Desktop Slider -->
+            <div class="hidden md:block overflow-hidden">
+                <div class="testimonial-slider flex gap-6">
+                    <div class="testimonial-slide">
+                        <img src="https://i.imgur.com/fZAwbiy.png" alt="Patient testimonial" class="w-96 h-64 rounded-lg object-cover shadow-xl">
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="https://i.imgur.com/FoTvf3A.png" alt="Patient testimonial" class="w-96 h-64 rounded-lg object-cover shadow-xl">
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="https://i.imgur.com/WcSw33v.png" alt="Patient testimonial" class="w-96 h-64 rounded-lg object-cover shadow-xl">
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="https://i.imgur.com/5UbeDXj.png" alt="Patient testimonial" class="w-96 h-64 rounded-lg object-cover shadow-xl">
+                    </div>
+                    <!-- Duplicate for infinite loop -->
+                    <div class="testimonial-slide">
+                        <img src="https://i.imgur.com/fZAwbiy.png" alt="Patient testimonial" class="w-96 h-64 rounded-lg object-cover shadow-xl">
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="https://i.imgur.com/FoTvf3A.png" alt="Patient testimonial" class="w-96 h-64 rounded-lg object-cover shadow-xl">
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="https://i.imgur.com/WcSw33v.png" alt="Patient testimonial" class="w-96 h-64 rounded-lg object-cover shadow-xl">
+                    </div>
+                    <div class="testimonial-slide">
+                        <img src="https://i.imgur.com/5UbeDXj.png" alt="Patient testimonial" class="w-96 h-64 rounded-lg object-cover shadow-xl">
+                    </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="text-4xl mb-4" style="color: #C9A877;">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700">After struggling with dentures that constantly slipped, I finally bit the bullet and got implants. Best decision I ever made. I can eat steak again, speak clearly, and I don't think about my teeth 20 times a day anymore. Dr. Betts made the whole process painless.</p>
-                    <p class="font-semibold text-gray-800">- Robert M.</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="text-4xl mb-4" style="color: #C9A877;">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700">I was terrified of the surgery and convinced I couldn't afford it. The team walked me through every step, offered financing that fit my budget, and made me feel completely at ease. Six months later, I look in the mirror and see the person I used to be. I'm so grateful.</p>
-                    <p class="font-semibold text-gray-800">- Linda S.</p>
-                </div>
+            </div>
+            
+            <!-- Mobile Stack -->
+            <div class="md:hidden space-y-6">
+                <img src="https://i.imgur.com/fZAwbiy.png" alt="Patient testimonial" class="w-full h-auto rounded-lg shadow-xl">
+                <img src="https://i.imgur.com/FoTvf3A.png" alt="Patient testimonial" class="w-full h-auto rounded-lg shadow-xl">
+                <img src="https://i.imgur.com/WcSw33v.png" alt="Patient testimonial" class="w-full h-auto rounded-lg shadow-xl">
+                <img src="https://i.imgur.com/5UbeDXj.png" alt="Patient testimonial" class="w-full h-auto rounded-lg shadow-xl">
             </div>
         </div>
     </section>
 
     <!-- CTA BUTTON 3 -->
-    <section class="bg-white py-16 px-4">
-        <div class="text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">Schedule My Appointment Today</a>
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">
+                Get My Free Consultation
+            </a>
         </div>
     </section>
 
     <!-- NOTE FROM DESK SECTION -->
     <section class="gradient-note py-20 px-4">
         <div class="max-w-4xl mx-auto">
-            <div class="glassmorphism rounded-xl p-8 md:p-12">
-                <img src="https://i.imgur.com/Fi5SGYG.png" alt="Dr. Norman Betts" class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
-                <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-8">A Note from the Desk of Dr. Norman Betts</h2>
-                <div class="text-white space-y-6">
-                    <p class="text-base md:text-lg opacity-90">I see you. I've worked with hundreds of patients who felt exactly the way you do right now; tired of planning meals around what you can actually chew, exhausted from years of temporary fixes that never quite work, frustrated by the constant worry about whether your dentures will slip at the worst possible moment. Maybe you've been thinking about implants for months, or even years, but the fear of surgery or the overwhelm of making the right choice kept you stuck.</p>
-                    <p class="text-base md:text-lg opacity-90">Here's what I want you to know: this decision doesn't have to feel scary or complicated. All-on-4 implants have transformed the lives of my patients, not just their smiles, but their entire sense of confidence and freedom. I've seen people cry tears of joy when they bite into an apple for the first time in a decade. I've watched patients light up when they realize they can laugh without covering their mouth. This is what we do, and we do it with the kind of care and precision that comes from over 30 years of dedication to this work.</p>
-                    <p class="text-base md:text-lg opacity-90">You deserve to feel like yourself again. Let's talk about how we can make that happen together. Your consultation is the first step, and I promise you'll leave feeling hopeful, informed, and ready to move forward.</p>
-                    <p class="text-lg md:text-xl font-semibold text-white mt-8 italic">Dr. Norman Betts</p>
+            <div class="glassmorphism rounded-lg p-8 md:p-12">
+                <img src="https://i.imgur.com/rLvuAX2.jpeg" alt="Dr. Ton" class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
+                
+                <h2 class="text-2xl md:text-4xl font-bold text-center text-white mb-8">A Note from the Desk of Dr. Ton</h2>
+                
+                <div class="space-y-6 text-white">
+                    <p class="text-base md:text-lg leading-relaxed">
+                        I see you.
+                    </p>
+                    
+                    <p class="text-base md:text-lg leading-relaxed">
+                        If you're reading this, you've probably been thinking about fixing your teeth for months, maybe even years. You've dealt with the embarrassment, the discomfort, the constant worry about what others notice. You've made it work, cutting food into smaller pieces, avoiding certain social situations, finding ways to hide what's happening in your mouth. But deep down, you know you deserve better than "making it work." You deserve to feel like yourself again. At Arbor Family Dentistry, we don't see you as a case number or a procedure. We see someone who's ready to stop compromising and start living fully. We've walked this journey with hundreds of patients who felt exactly like you do now - uncertain but hopeful, nervous but ready. And we've watched them transform not just their smiles, but their entire lives. The grandmother who cried happy tears biting into an apple at her grandson's birthday. The professional who stopped covering his mouth during presentations. The wife who felt beautiful on her anniversary for the first time in a decade. That could be your story too. Let's start with a conversation - no pressure, just honest answers to your real questions.
+                    </p>
                 </div>
+                
+                <p class="text-white text-xl mt-8 font-semibold text-right">Dr. Ton</p>
             </div>
         </div>
     </section>
 
     <!-- FAQ SECTION -->
-    <section class="bg-white py-20 px-4">
+    <section class="py-20 px-4 bg-white">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #4A6785;">Frequently Asked Questions</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16" style="color: #3E5E44;">Frequently Asked Questions</h2>
+            
             <div class="space-y-4">
                 <div class="border-b border-gray-200 pb-4">
                     <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Is the procedure painful?</h3>
-                        <span class="arrow text-2xl" style="color: #4A6785;">▼</span>
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How painful is the All-on-X procedure?</h3>
+                        <svg class="arrow w-6 h-6 text-gray-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
                     </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>Most patients are surprised by how comfortable the process is. We offer sedation options to keep you completely relaxed during surgery, and post-procedure discomfort is typically manageable with over-the-counter pain medication. Many patients return to normal activities within 2-4 days.</p>
-                    </div>
-                </div>
-                <div class="border-b border-gray-200 pb-4">
-                    <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">What if I don't have enough bone for implants?</h3>
-                        <span class="arrow text-2xl" style="color: #4A6785;">▼</span>
-                    </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>That's the beauty of All-on-4 - it's specifically designed for patients with bone loss. The implants are placed at precise angles to maximize your existing bone structure, often eliminating the need for bone grafting entirely.</p>
+                    <div class="faq-answer text-gray-700 leading-relaxed pl-4">
+                        Most patients are surprised at how manageable the discomfort is. We offer sedation options to keep you completely relaxed during the procedure, and most people describe the recovery as less painful than a tooth extraction. You'll receive detailed aftercare instructions and pain management support.
                     </div>
                 </div>
+                
                 <div class="border-b border-gray-200 pb-4">
                     <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How much do All-on-4 implants cost?</h3>
-                        <span class="arrow text-2xl" style="color: #4A6785;">▼</span>
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Will my new teeth look fake or obvious?</h3>
+                        <svg class="arrow w-6 h-6 text-gray-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
                     </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>Treatment costs vary based on your specific needs, but we provide transparent pricing during your consultation. We also offer flexible financing options and work with you to maximize insurance benefits. Many patients find monthly payments more affordable than they expected.</p>
+                    <div class="faq-answer text-gray-700 leading-relaxed pl-4">
+                        Not at all. Your restoration is custom-designed to match your facial structure, age, and natural coloring. We create teeth that look like beautiful, natural teeth - not overly white veneers or obvious dentures. Friends will notice you look great but won't be able to pinpoint why.
                     </div>
                 </div>
+                
                 <div class="border-b border-gray-200 pb-4">
                     <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Will my implants look natural?</h3>
-                        <span class="arrow text-2xl" style="color: #4A6785;">▼</span>
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Can I really afford this?</h3>
+                        <svg class="arrow w-6 h-6 text-gray-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
                     </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>Yes. Your prosthetic teeth are custom-designed to match your facial structure, age, and desired appearance. The goal is a smile that looks and feels like your own - not fake or obviously artificial.</p>
+                    <div class="faq-answer text-gray-700 leading-relaxed pl-4">
+                        We offer multiple financing options with low down payments and flexible monthly plans. Many patients find the monthly investment comparable to what they were spending on denture maintenance, repairs, and special foods. We'll create a payment plan that fits your budget.
                     </div>
                 </div>
+                
                 <div class="border-b border-gray-200 pb-4">
                     <div class="faq-question flex justify-between items-center py-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How do I know if I'm a candidate for All-on-4?</h3>
-                        <span class="arrow text-2xl" style="color: #4A6785;">▼</span>
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How long will the results last?</h3>
+                        <svg class="arrow w-6 h-6 text-gray-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
                     </div>
-                    <div class="faq-answer text-base md:text-lg text-gray-700 pl-4">
-                        <p>The best way to find out is through a consultation with Dr. Betts. We'll perform a comprehensive evaluation, including 3D imaging, to determine if All-on-4 is right for you and create a personalized treatment plan.</p>
+                    <div class="faq-answer text-gray-700 leading-relaxed pl-4">
+                        With proper care (regular brushing and dental check-ups), All-on-X implants typically last 20+ years, often a lifetime. The implants themselves are designed to be permanent, and the restoration is incredibly durable. This is a long-term investment in your quality of life.
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Am I too old for this procedure?</h3>
+                        <svg class="arrow w-6 h-6 text-gray-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer text-gray-700 leading-relaxed pl-4">
+                        Age alone is rarely a disqualifying factor. We've successfully treated patients well into their 80s. What matters is your overall health and bone structure, which we'll evaluate during your consultation. Many older patients tell us they wish they'd done it sooner.
                     </div>
                 </div>
             </div>
@@ -256,15 +355,20 @@
     <!-- FINAL CTA SECTION -->
     <section class="gradient-final py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-lg md:text-xl text-white mb-8 leading-relaxed">You've spent years thinking about this, researching options, wondering if now is the right time. Here's the truth: waiting won't make the decision easier, and it won't restore your confidence. Every day you delay is another day of limiting what you eat, avoiding photos, and feeling less than yourself. Dr. Betts and our team are ready to guide you through this transformation with the expertise, care, and support you deserve. Your free consultation is the first step toward the smile - and the life - you've been waiting for.</p>
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">Book My Appointment Today</a>
+            <p class="text-lg md:text-xl text-white mb-8 leading-relaxed">
+                You've read this far because something inside you knows it's time. You're tired of compromising, tired of hiding, tired of letting your teeth control your life. The confidence and freedom you're looking for won't come from more research or more waiting,  it comes from taking the next step. Our team is ready to answer your questions, address your concerns, and show you exactly what's possible for your specific situation. Book your free consultation today and let's start building your path to a smile that changes everything.
+            </p>
+            
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button">
+                Schedule My Free Consultation
+            </a>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="bg-slate-800 text-white py-12 px-4">
-        <div class="max-w-6xl mx-auto text-center">
-            <p class="text-base mb-4">Trillium Oral Surgery - A CompoundRev Marketing Partner</p>
+        <div class="max-w-6xl mx-auto text-center space-y-4">
+            <p class="text-base">Arbor Family Dentistry - A CompoundRev Marketing Partner</p>
             <p class="text-sm opacity-75">This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
         </div>
     </footer>
