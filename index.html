@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NVision - EVO ICL Vision Correction with Dr. Tom Tooma</title>
+    <title>West Side Laser - Alma TED Hair Restoration</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html {
@@ -15,7 +15,7 @@
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, #006EB6 0%, #004d82 100%);
+            background: linear-gradient(135deg, #69BAC5 0%, #4a8a93 100%);
         }
         
         .glassmorphism {
@@ -25,21 +25,13 @@
         }
         
         .cta-button {
-            background-color: #E0B33A;
+            background-color: #D9C6A3;
             transition: all 0.3s ease;
         }
         
         .cta-button:hover {
-            background-color: #c99d2f;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-        
-        .image-hover {
-            transition: transform 0.3s ease;
-        }
-        
-        .image-hover:hover {
-            transform: scale(1.1);
+            background-color: #c4b08e;
+            transform: translateY(-2px);
         }
         
         .faq-question {
@@ -48,349 +40,288 @@
         }
         
         .faq-question:hover {
-            background-color: #f3f4f6;
+            background-color: #f9fafb;
         }
         
         .arrow {
             transition: transform 0.3s ease;
-            color: #E0B33A;
+            color: #D9C6A3;
         }
         
-        .accent-underline {
-            border-bottom: 3px solid #E0B33A;
-            display: inline-block;
-            padding-bottom: 4px;
+        .testimonial-slider {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        .testimonial-slider:hover {
+            animation-play-state: paused;
         }
         
         @media (max-width: 768px) {
             .testimonial-slider {
-                display: block !important;
+                animation: none;
+                flex-direction: column;
             }
+        }
+        
+        img {
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- HERO SECTION -->
+    <!-- Hero Section -->
     <section class="hero-gradient min-h-screen flex items-center justify-center px-4 py-20">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-blue-100 text-sm md:text-base mb-6 font-medium">
-                For people who are nearsighted and tired of the cost and hassle of contacts or glasses.
-            </p>
+            <p class="text-sm md:text-base text-white mb-4 font-medium">For Calgary professionals refuse to let thinning hair define how they look or feel</p>
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Your Hair Is Thinning & You See It Every Day. This Is How You <span class="text-[#D9C6A3]">Actually Stop It.</span></h1>
+            <p class="text-lg md:text-xl text-white mb-8 border-b-2 border-[#D9C6A3] inline-block pb-2">Non-surgical, science-backed hair restoration you can see and feel</p>
             
-            <h1 class="text-white text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                Stop Living Life in Blur & Start Seeing the World <span class="text-[#E0B33A]">Clearly</span>
-            </h1>
-            
-            <p class="text-blue-100 text-lg md:text-xl mb-12">
-                <span class="accent-underline">Advanced lens technology that works when LASIK surgery can't</span>
-            </p>
-            
-            <div class="mb-12 max-w-3xl mx-auto">
-                <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                    <iframe 
-                        src="https://www.youtube.com/embed/WjNhiG9uNXg" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen
-                        class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
-                    ></iframe>
+            <div class="mb-10">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 max-w-2xl mx-auto">
+                    <p class="text-white text-sm mb-4"><!-- Add YouTube embed here --></p>
                 </div>
-                <p class="mt-4 text-blue-100 text-sm">
-                    <a href="https://youtu.be/WjNhiG9uNXg" target="_blank" class="hover:text-white transition-colors">
-                        Having trouble? Watch on YouTube →
-                    </a>
-                </p>
             </div>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" 
-               class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                Schedule My EVO ICL Evaluation
-            </a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Claim My Consultation Spot</a>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="bg-white py-20 px-4">
+    <!-- About Section -->
+    <section class="py-20 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                Meet Dr. Tom Tooma - Founder of NVISION and Pioneer in <span class="text-[#E0B33A]">Advanced Vision Correction</span>
-            </h2>
-            
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Meet Leslie Poirier, the medical mind behind every treatment at <span class="text-[#D9C6A3]">West Side Laser.</span></h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://i.imgur.com/YyJx6Au.jpeg" 
-                         alt="Dr. Tom Tooma" 
-                         class="w-96 h-auto object-cover rounded-lg shadow-xl image-hover mx-auto">
+                    <img src="https://i.imgur.com/qP8piYE.png" alt="Leslie Poirier" class="w-96 h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
                 </div>
-                
                 <div class="space-y-6">
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                        When you're making a decision about your eyes, you want the most experienced hands in the field. Dr. Tom Tooma has performed over 130,000 vision correction procedures, making him one of the most accomplished refractive surgeons in the nation. As the founder of NVISION Eye Centers, he's dedicated his career to bringing cutting-edge technology to patients who deserve more than one-size-fits-all solutions.
-                    </p>
-                    
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                        Dr. Tooma specializes in EVO ICL for patients told they aren't LASIK candidates. He understands the frustration of being turned away, the years you've spent managing contacts, and the desire for a solution that's both safe and transformative. His patients choose him not just for his technical mastery, but for his genuine commitment to delivering life-changing results without compromise.
-                    </p>
-                    
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                        With Dr. Tooma, you're not just getting a procedure. You're getting clarity, confidence, and freedom.
-                    </p>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">Leslie isn't just a Nurse Practitioner, she's a Master's-trained specialist who's spent nearly two decades refining her expertise in helping clients age gracefully and naturally. Since earning her certification from Dalhousie University and her Bachelor of Nursing from the University of Calgary, she's built a reputation for delivering results that look effortless, never overdone.</p>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">As our Medical Director since 2017, Leslie personally oversees every Alma TED protocol, ensuring you receive the same science-backed, medically sound treatment she'd recommend to her own family. Her philosophy is simple: help you look like the best version of yourself, not someone else entirely.</p>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">When you work with Leslie and the West Side Laser team, you're in the hands of medical professionals who understand that your hair restoration journey deserves clinical precision combined with genuine care.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA BUTTON 2 -->
-    <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-4">
+    <!-- CTA Button 2 -->
+    <section class="py-16 px-4 bg-gradient-to-r from-gray-50 to-gray-100">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" 
-               class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                Talk to Dr. Tooma's Team Today
-            </a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Yes, I Want Thicker Hair</a>
         </div>
     </section>
 
-    <!-- VALUE PILLARS SECTION -->
-    <section class="py-20 px-4" style="background-color: #006EB6;">
+    <!-- Value Pillars Section -->
+    <section class="py-20 px-4" style="background-color: #69BAC5;">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-white mb-16 text-center">
-                Why People Choose Dr. Tooma / NVISION
-            </h2>
-            
+            <h2 class="text-2xl md:text-4xl font-bold text-white mb-16 text-center">WHY PEOPLE CHOOSE WEST SIDE LASER</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="glassmorphism rounded-lg p-8 hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
-                        Crystal-Clear Outcomes
-                    </h3>
-                    <p class="text-blue-100 text-base md:text-lg leading-relaxed">
-                        Patients consistently report 20/20 or better vision with exceptional night vision quality. Many see better than they ever did with glasses or contacts.
-                    </p>
+                <div class="glassmorphism p-8 rounded-lg">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Visible Results in Weeks, Not Years</h3>
+                    <p class="text-base md:text-lg text-white leading-relaxed">Most patients see noticeable thickness within three treatments (90 days), so you're not waiting endlessly while your hair continues thinning.</p>
                 </div>
-                
-                <div class="glassmorphism rounded-lg p-8 hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
-                        Zero Corneal Compromise
-                    </h3>
-                    <p class="text-blue-100 text-base md:text-lg leading-relaxed">
-                        EVO ICL sits behind your iris without touching your cornea. No tissue removal. No dry eye worsening. No risk of ectasia or other laser complications.
-                    </p>
+                <div class="glassmorphism p-8 rounded-lg">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">No Surgery, No Daily Medications</h3>
+                    <p class="text-base md:text-lg text-white leading-relaxed">This is ultrasound-based hair restoration - no scalpels, no scarring, no pills with side effects, and no messy topical regimens to remember every single day.</p>
                 </div>
-                
-                <div class="glassmorphism rounded-lg p-8 hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
-                        Built for Your Lifestyle
-                    </h3>
-                    <p class="text-blue-100 text-base md:text-lg leading-relaxed">
-                        Whether you're an athlete, a professional, or someone who just wants to wake up and see clearly, EVO ICL adapts to your life. No maintenance. No daily hassle. Just vision.
-                    </p>
+                <div class="glassmorphism p-8 rounded-lg">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Personalized Treatment Plans</h3>
+                    <p class="text-base md:text-lg text-white leading-relaxed">Your hair loss pattern is unique. We customize every Alma TED protocol based on your specific thinning areas, goals, and timeline - not a one-size-fits-all approach.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section class="bg-white py-20 px-4">
+    <!-- Testimonials Section -->
+    <section class="py-20 px-4 bg-gray-50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-16 text-center">
-                From Contact Lens Burnout to <span class="text-[#E0B33A]">Crystal-Clear Mornings</span>
-            </h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-16 text-center">Real Transformations from <span class="text-[#D9C6A3]">People Just Like You</span></h2>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-4xl text-[#E0B33A] mb-4">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
-                        I was told I'd never qualify for LASIK. Dr. Tooma gave me 20/15 vision with EVO ICL. I wake up every day still amazed that I can see the alarm clock.
-                    </p>
-                    <p class="font-semibold text-gray-800">
-                        - Jennifer K.
-                    </p>
+            <!-- Desktop Slider -->
+            <div class="hidden md:block overflow-hidden">
+                <div class="testimonial-slider">
+                    <div class="flex-shrink-0 px-4">
+                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 1" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 px-4">
+                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://i.imgur.com/uPJ4VfO.png" alt="Testimonial 2" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 px-4">
+                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://i.imgur.com/wSRmIiD.png" alt="Testimonial 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 px-4">
+                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 4" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 px-4">
+                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 1" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 px-4">
+                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://i.imgur.com/uPJ4VfO.png" alt="Testimonial 2" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 px-4">
+                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://i.imgur.com/wSRmIiD.png" alt="Testimonial 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 px-4">
+                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 4" class="w-full h-full object-cover">
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-4xl text-[#E0B33A] mb-4">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
-                        After 25 years of contacts, my eyes were done. Three weeks after EVO ICL, I hiked to the top of Mount Whitney and saw every detail with perfect clarity. Best decision I ever made.
-                    </p>
-                    <p class="font-semibold text-gray-800">
-                        - Marcus T.
-                    </p>
+            </div>
+            
+            <!-- Mobile Stack -->
+            <div class="md:hidden space-y-6">
+                <div class="w-full rounded-lg shadow-xl overflow-hidden">
+                    <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 1" class="w-full h-auto object-cover">
                 </div>
-                
-                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-4xl text-[#E0B33A] mb-4">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
-                        My prescription was -13. I thought I'd wear thick glasses forever. Now I see better than I did with contacts, and nobody can tell I had surgery. Dr. Tooma is a magician.
-                    </p>
-                    <p class="font-semibold text-gray-800">
-                        - Sarah L.
-                    </p>
+                <div class="w-full rounded-lg shadow-xl overflow-hidden">
+                    <img src="https://i.imgur.com/uPJ4VfO.png" alt="Testimonial 2" class="w-full h-auto object-cover">
+                </div>
+                <div class="w-full rounded-lg shadow-xl overflow-hidden">
+                    <img src="https://i.imgur.com/wSRmIiD.png" alt="Testimonial 3" class="w-full h-auto object-cover">
+                </div>
+                <div class="w-full rounded-lg shadow-xl overflow-hidden">
+                    <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 4" class="w-full h-auto object-cover">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA BUTTON 3 -->
-    <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-4">
+    <!-- CTA Button 3 -->
+    <section class="py-16 px-4 bg-white">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" 
-               class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                Talk to Dr. Tooma's Team Today
-            </a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Yes, I Want Thicker Hair</a>
         </div>
     </section>
 
-    <!-- NOTE FROM DESK SECTION -->
-    <section class="py-20 px-4" style="background-color: #006EB6;">
+    <!-- Note From Desk Section -->
+    <section class="py-20 px-4" style="background-color: #69BAC5;">
         <div class="max-w-4xl mx-auto">
-            <div class="glassmorphism rounded-lg p-8 md:p-12">
-                <img src="https://i.imgur.com/YyJx6Au.jpeg" 
-                     alt="Dr. Tom Tooma" 
-                     class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
-                
-                <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-                    A Note from the Desk of Dr. Tom Tooma
-                </h2>
-                
-                <div class="space-y-6">
-                    <p class="text-base md:text-lg text-blue-100 leading-relaxed">
-                        I see you. I've worked with thousands of patients who felt exactly the way you do right now; frustrated with contacts, disappointed after being told LASIK won't work, maybe even resigned to a lifetime of glasses. You've probably spent months (or years) researching options, reading articles late at night, wondering if there's a solution that's both safe and effective for your eyes.
-                    </p>
-                    
-                    <p class="text-base md:text-lg text-blue-100 leading-relaxed">
-                        Here's what I want you to know: you're not stuck. EVO ICL was specifically designed for patients like you–people with high prescriptions, thin corneas, or chronic dry eye who deserve better than "sorry, you're not a candidate." I've helped people with -20 prescriptions see 20/20. I've given active professionals their spontaneous lifestyles back. And I've never had to compromise safety to do it.
-                    </p>
-                    
-                    <p class="text-base md:text-lg text-blue-100 leading-relaxed">
-                        If you're ready to explore what's possible for your eyes, let's talk. No pressure. No sales pitch. Just honest conversation about whether EVO ICL is the right fit for your vision and your life.
-                    </p>
+            <div class="glassmorphism p-10 md:p-16 rounded-lg">
+                <img src="https://i.imgur.com/0S6KmqN.jpeg" alt="Sean Carson" class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 text-center">NOTE FROM THE DESK OF SEAN CARSON</h2>
+                <div class="space-y-6 text-white">
+                    <p class="text-base md:text-lg leading-relaxed">I see you.</p>
+                    <p class="text-base md:text-lg leading-relaxed">I've worked with hundreds of Calgary professionals who felt exactly the way you do right now - frustrated by thinning hair, tired of "solutions" that don't work, and wondering if it's even worth trying one more thing.</p>
+                    <p class="text-base md:text-lg leading-relaxed">Here's what I know after more than a decade in this industry: hair loss affects how you see yourself every single day. The morning mirror. The photos. The constant awareness that something you used to take for granted is slipping away.</p>
+                    <p class="text-base md:text-lg leading-relaxed">That's why we brought Alma TED to West Side Laser. It's not another empty promise, it's FDA-cleared technology that actually delivers visible regrowth without surgery or daily medications. And under Leslie Poirier's medical direction, we've helped countless clients reclaim confidence they thought was gone forever.</p>
+                    <p class="text-base md:text-lg leading-relaxed">If you've been thinking about this for months (or years), let's have an honest conversation about what's possible for your hair. No pressure, no sales pitch - just real answers from medical professionals who genuinely care about your outcome.</p>
+                    <p class="text-base md:text-lg leading-relaxed">Your consultation is free. Your decision is entirely yours. But the transformation? That's something you'll see in the mirror every single day.</p>
+                    <p class="text-base md:text-lg font-semibold mt-8">Sean Carson</p>
                 </div>
-                
-                <p class="text-xl text-white font-semibold mt-8 text-right italic">
-                    Dr. Tom Tooma
-                </p>
             </div>
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section class="bg-white py-20 px-4">
+    <!-- FAQ Section -->
+    <section class="py-20 px-4 bg-white">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                Frequently Asked <span class="text-[#E0B33A]">Questions</span>
-            </h2>
-            
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Frequently Asked <span class="text-[#D9C6A3]">Questions</span></h2>
             <div class="space-y-4">
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center bg-white">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
-                            How is EVO ICL different from LASIK?
-                        </h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                <div class="border-b border-gray-200">
+                    <div class="faq-question flex justify-between items-center py-6 px-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">How is Alma TED different from Rogaine or other topical treatments?</h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
                     </div>
-                    <div class="faq-answer px-6 pb-6 bg-gray-50">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                            LASIK reshapes your cornea with a laser, permanently removing tissue. EVO ICL places a soft lens behind your iris without touching your cornea. It's reversible, doesn't cause dry eye, and works for prescriptions LASIK can't safely treat.
-                        </p>
+                    <div class="faq-answer px-4 pb-6">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Rogaine relies on daily chemical application that many people find messy and inconsistent. Alma TED uses ultrasound technology combined with topical growth factors to penetrate deeper into the scalp, stimulating follicles at a cellular level. It's a completely different mechanism - and it doesn't require daily commitment.</p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center bg-white">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
-                            Does it hurt?
-                        </h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                <div class="border-b border-gray-200">
+                    <div class="faq-question flex justify-between items-center py-6 px-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">Will people be able to tell I've had treatment?</h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
                     </div>
-                    <div class="faq-answer px-6 pb-6 bg-gray-50">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                            The procedure takes about 15 minutes per eye under numbing drops. Most patients report feeling slight pressure but no pain. You'll go home the same day and see clearly within hours.
-                        </p>
+                    <div class="faq-answer px-4 pb-6">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">No. The results look completely natural because you're regrowing your own hair, not transplanting plugs or wearing anything artificial. Most clients say people notice they look "refreshed" but can't pinpoint why.</p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center bg-white">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
-                            What if my vision changes later in life?
-                        </h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                <div class="border-b border-gray-200">
+                    <div class="faq-question flex justify-between items-center py-6 px-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">How long before I see results?</h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
                     </div>
-                    <div class="faq-answer px-6 pb-6 bg-gray-50">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                            That's the beauty of EVO ICL - it's removable and replaceable. If your prescription changes or new technology emerges, we can adjust. You're never locked in.
-                        </p>
+                    <div class="faq-answer px-4 pb-6">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Most patients notice visible improvements within 90 days (approximately 3 treatments). Some see changes even sooner. This is significantly faster than medications like Propecia, which can take 6-12 months.</p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center bg-white">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
-                            How long does EVO ICL last?
-                        </h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                <div class="border-b border-gray-200">
+                    <div class="faq-question flex justify-between items-center py-6 px-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">Is it painful?</h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
                     </div>
-                    <div class="faq-answer px-6 pb-6 bg-gray-50">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                            The lens is designed to stay in place permanently, but unlike LASIK, it can be removed or exchanged if needed. Many patients have had their lenses for over 10 years with perfect results.
-                        </p>
+                    <div class="faq-answer px-4 pb-6">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Not at all. Alma TED uses acoustic sound waves and feels like a gentle massage on the scalp. There's no downtime, and you can return to normal activities immediately after treatment.</p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center bg-white">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
-                            What's the recovery like?
-                        </h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                <div class="border-b border-gray-200">
+                    <div class="faq-question flex justify-between items-center py-6 px-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">How much does it cost?</h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
                     </div>
-                    <div class="faq-answer px-6 pb-6 bg-gray-50">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                            Most patients see clearly within 24 hours and return to work in 1-2 days. You'll avoid strenuous exercise and swimming for a week, but normal activities resume quickly.
-                        </p>
+                    <div class="faq-answer px-4 pb-6">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Pricing depends on your specific treatment plan, which we'll discuss during your consultation. We believe in transparent pricing with no hidden fees - you'll know exactly what to expect before committing to anything.</p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center bg-white">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
-                            Am I too old (or too young) for EVO ICL?
-                        </h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                <div class="border-b border-gray-200">
+                    <div class="faq-question flex justify-between items-center py-6 px-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">Is this safe?</h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
                     </div>
-                    <div class="faq-answer px-6 pb-6 bg-gray-50">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                            EVO ICL is FDA-approved for patients 21-45, but Dr. Tooma evaluates every case individually. If you're outside that range, there may still be excellent options for you.
-                        </p>
+                    <div class="faq-answer px-4 pb-6">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Yes. Alma TED is FDA-cleared and administered under the supervision of our Medical Director, Leslie Poirier. It's a non-invasive treatment with an excellent safety profile and no systemic side effects.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FINAL CTA SECTION -->
-    <section class="py-20 px-4" style="background-color: #006EB6;">
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4" style="background-color: #69BAC5;">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed">
-                You've spent long enough working around your vision. The morning routines. The travel hassle. The disappointment of being told "you're not a candidate." EVO ICL with Dr. Tooma gives you what you've been searching for - safe, proven, life-changing vision correction designed specifically for eyes like yours. Book your consultation and let's see what's possible.
-            </p>
-            
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" 
-               class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all">
-                Take the First Step to Freedom
-            </a>
+            <p class="text-lg md:text-xl text-white mb-10 leading-relaxed">You've spent enough time watching your hair thin and wondering if anything will actually work. The difference between where you are now and where you want to be is one conversation. Book your free consultation today and let's create a personalized plan that brings back the hair - and the confidence - you've been missing. No pressure, no commitments - just honest answers and a clear path forward.</p>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Book My Free Consultation Now</a>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-12 px-4" style="background-color: #006EB6;">
+    <!-- Footer -->
+    <footer class="py-12 px-4" style="background-color: #69BAC5;">
         <div class="max-w-6xl mx-auto text-center">
-            <p class="text-white text-base mb-4">
-                NVision - A CompoundRev Marketing Partner
-            </p>
-            <p class="text-blue-200 text-sm leading-relaxed">
-                This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
-            </p>
+            <p class="text-white text-sm md:text-base mb-4">West Side Laser - A CompoundRev Marketing Partner</p>
+            <p class="text-white text-xs md:text-sm leading-relaxed">This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
         </div>
     </footer>
 
