@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>West Michigan Plastic Surgery - Facelift Consultation</title>
+    <title>NVision - EVO ICL Vision Correction with Dr. Tom Tooma</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html {
             scroll-behavior: smooth;
         }
         
-        .gradient-hero {
-            background: linear-gradient(135deg, #2E6060 0%, #1e3f3f 100%);
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #006EB6 0%, #004d82 100%);
         }
         
         .glassmorphism {
@@ -21,13 +25,21 @@
         }
         
         .cta-button {
-            background-color: #C8B28A;
+            background-color: #E0B33A;
             transition: all 0.3s ease;
         }
         
         .cta-button:hover {
-            background-color: #b39f78;
-            transform: translateY(-2px);
+            background-color: #c99d2f;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .image-hover {
+            transition: transform 0.3s ease;
+        }
+        
+        .image-hover:hover {
+            transform: scale(1.1);
         }
         
         .faq-question {
@@ -36,287 +48,349 @@
         }
         
         .faq-question:hover {
-            background-color: #f9fafb;
+            background-color: #f3f4f6;
         }
         
         .arrow {
             transition: transform 0.3s ease;
-            color: #C8B28A;
+            color: #E0B33A;
         }
         
-        .testimonial-slider {
-            display: flex;
-            animation: scroll 20s linear infinite;
-        }
-        
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-        
-        .testimonial-slider:hover {
-            animation-play-state: paused;
+        .accent-underline {
+            border-bottom: 3px solid #E0B33A;
+            display: inline-block;
+            padding-bottom: 4px;
         }
         
         @media (max-width: 768px) {
             .testimonial-slider {
-                animation: none;
-                flex-direction: column;
+                display: block !important;
             }
-        }
-        
-        img {
-            transition: transform 0.3s ease;
-        }
-        
-        img:hover {
-            transform: scale(1.1);
         }
     </style>
 </head>
-<body class="font-sans antialiased">
+<body class="antialiased">
 
-    <!-- Hero Section -->
-    <section class="gradient-hero text-white py-20 px-6">
-        <div class="max-w-5xl mx-auto text-center">
-            <p class="text-sm md:text-base mb-6 text-gray-200">For anyone in West Michigan who's ready to stop avoiding mirrors and start loving what they see.</p>
-            <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">Reclaim the Confident, Refreshed You–Without Looking Like You Had <span style="color: #C8B28A;">Work Done</span></h1>
-            <p class="text-lg md:text-xl mb-10 text-gray-200"><span style="border-bottom: 3px solid #C8B28A; padding-bottom: 2px;">The transformation you've been waiting for, delivered with precision and care.</span></p>
+    <!-- HERO SECTION -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center px-4 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-blue-100 text-sm md:text-base mb-6 font-medium">
+                For people who are nearsighted and tired of the cost and hassle of contacts or glasses.
+            </p>
             
-            <!-- VSL Video Section -->
-            <div class="max-w-4xl mx-auto mb-10">
+            <h1 class="text-white text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                Stop Living Life in Blur & Start Seeing the World <span class="text-[#E0B33A]">Clearly</span>
+            </h1>
+            
+            <p class="text-blue-100 text-lg md:text-xl mb-12">
+                <span class="accent-underline">Advanced lens technology that works when LASIK surgery can't</span>
+            </p>
+            
+            <div class="mb-12 max-w-3xl mx-auto">
                 <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                    <iframe src="https://www.youtube.com/embed/nVyXi7qlX6Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"></iframe>
+                    <iframe 
+                        src="https://www.youtube.com/embed/WjNhiG9uNXg" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+                    ></iframe>
                 </div>
-                <a href="https://youtu.be/nVyXi7qlX6Y" target="_blank" class="inline-block mt-4 text-sm text-gray-200 hover:text-white transition-colors">Having trouble? Watch on YouTube →</a>
+                <p class="mt-4 text-blue-100 text-sm">
+                    <a href="https://youtu.be/WjNhiG9uNXg" target="_blank" class="hover:text-white transition-colors">
+                        Having trouble? Watch on YouTube →
+                    </a>
+                </p>
             </div>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Book My Consultation Now</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" 
+               class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                Schedule My EVO ICL Evaluation
+            </a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="bg-white py-20 px-6">
+    <!-- ABOUT SECTION -->
+    <section class="bg-white py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-gray-900">Meet Dr. <span style="color: #C8B28A;">Scott Holley</span></h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                Meet Dr. Tom Tooma - Founder of NVISION and Pioneer in <span class="text-[#E0B33A]">Advanced Vision Correction</span>
+            </h2>
+            
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://i.imgur.com/MVPrH5y.jpeg" alt="Dr. Scott Holley" class="w-96 h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
+                    <img src="https://i.imgur.com/YyJx6Au.jpeg" 
+                         alt="Dr. Tom Tooma" 
+                         class="w-96 h-auto object-cover rounded-lg shadow-xl image-hover mx-auto">
                 </div>
+                
                 <div class="space-y-6">
-                    <p class="text-base md:text-lg text-gray-700">Dr. Scott Holley is a board-certified plastic surgeon specializing in facial rejuvenation procedures, with particular mastery in facelift surgery. His commitment to staying at the forefront of surgical innovation means you benefit from the most advanced techniques available today, including deep plane facelifts and SMAS plication approaches that deliver superior, long-lasting results.</p>
-                    <p class="text-base md:text-lg text-gray-700">What sets Dr. Holley apart is his unwavering focus on natural outcomes. He's built his reputation on creating results that don't scream "facelift", they whisper "refreshed." His extensive before-and-after portfolio demonstrates consistent excellence across diverse age groups and facial structures.</p>
-                    <p class="text-base md:text-lg text-gray-700">Dr. Holley serves patients from across West Michigan at state-of-the-art facilities in Portage and Battle Creek. His surgical approach combines technical precision with genuine care for each patient's individual aesthetic goals. You'll never feel pressured into procedures you don't need, and you'll always receive honest guidance about what's achievable.</p>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        When you're making a decision about your eyes, you want the most experienced hands in the field. Dr. Tom Tooma has performed over 130,000 vision correction procedures, making him one of the most accomplished refractive surgeons in the nation. As the founder of NVISION Eye Centers, he's dedicated his career to bringing cutting-edge technology to patients who deserve more than one-size-fits-all solutions.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        Dr. Tooma specializes in EVO ICL for patients told they aren't LASIK candidates. He understands the frustration of being turned away, the years you've spent managing contacts, and the desire for a solution that's both safe and transformative. His patients choose him not just for his technical mastery, but for his genuine commitment to delivering life-changing results without compromise.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        With Dr. Tooma, you're not just getting a procedure. You're getting clarity, confidence, and freedom.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Button 2 -->
-    <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-6">
+    <!-- CTA BUTTON 2 -->
+    <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">See What's Possible for Me</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" 
+               class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                Talk to Dr. Tooma's Team Today
+            </a>
         </div>
     </section>
 
-    <!-- Value Pillars Section -->
-    <section style="background-color: #2E6060;" class="py-20 px-6">
+    <!-- VALUE PILLARS SECTION -->
+    <section class="py-20 px-4" style="background-color: #006EB6;">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-white">Why People Choose West Michigan Plastic Surgery</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-white mb-16 text-center">
+                Why People Choose Dr. Tooma / NVISION
+            </h2>
+            
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="glassmorphism rounded-lg p-8 shadow-xl">
-                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white">Long-Lasting Investment</h3>
-                    <p class="text-base md:text-lg text-gray-100">A properly performed facelift can turn back the clock 10-15 years with results that last. Stop the endless cycle of temporary treatments and invest in a solution that endures</p>
+                <div class="glassmorphism rounded-lg p-8 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
+                        Crystal-Clear Outcomes
+                    </h3>
+                    <p class="text-blue-100 text-base md:text-lg leading-relaxed">
+                        Patients consistently report 20/20 or better vision with exceptional night vision quality. Many see better than they ever did with glasses or contacts.
+                    </p>
                 </div>
-                <div class="glassmorphism rounded-lg p-8 shadow-xl">
-                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white">Understanding Recovery Realities</h3>
-                    <p class="text-base md:text-lg text-gray-100">Clear, honest guidance about what to expect during recovery. No surprises, no minimizing the process, just transparent information so you can plan confidently.</p>
+                
+                <div class="glassmorphism rounded-lg p-8 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
+                        Zero Corneal Compromise
+                    </h3>
+                    <p class="text-blue-100 text-base md:text-lg leading-relaxed">
+                        EVO ICL sits behind your iris without touching your cornea. No tissue removal. No dry eye worsening. No risk of ectasia or other laser complications.
+                    </p>
                 </div>
-                <div class="glassmorphism rounded-lg p-8 shadow-xl">
-                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white">Advanced Techniques</h3>
-                    <p class="text-base md:text-lg text-gray-100">Access to the most modern facelift approaches means better results with less downtime. Dr. Holley stays current with surgical innovations to give you every advantage.</p>
+                
+                <div class="glassmorphism rounded-lg p-8 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
+                        Built for Your Lifestyle
+                    </h3>
+                    <p class="text-blue-100 text-base md:text-lg leading-relaxed">
+                        Whether you're an athlete, a professional, or someone who just wants to wake up and see clearly, EVO ICL adapts to your life. No maintenance. No daily hassle. Just vision.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="bg-white py-20 px-6">
+    <!-- TESTIMONIALS SECTION -->
+    <section class="bg-white py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-gray-900">Real Patients. Real <span style="color: #C8B28A;">Transformations</span>. Real Confidence.</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-16 text-center">
+                From Contact Lens Burnout to <span class="text-[#E0B33A]">Crystal-Clear Mornings</span>
+            </h2>
             
-            <!-- Desktop Slider -->
-            <div class="hidden md:block overflow-hidden">
-                <div class="testimonial-slider">
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/ogJSGZn.png" alt="Patient testimonial 1" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/MNWQVOY.png" alt="Patient testimonial 2" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/1MnSa0j.png" alt="Patient testimonial 3" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/W353D62.png" alt="Patient testimonial 4" class="w-full h-full object-cover">
-                    </div>
-                    <!-- Duplicate for infinite loop -->
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/ogJSGZn.png" alt="Patient testimonial 1" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/MNWQVOY.png" alt="Patient testimonial 2" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/1MnSa0j.png" alt="Patient testimonial 3" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/W353D62.png" alt="Patient testimonial 4" class="w-full h-full object-cover">
-                    </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl text-[#E0B33A] mb-4">"</div>
+                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
+                        I was told I'd never qualify for LASIK. Dr. Tooma gave me 20/15 vision with EVO ICL. I wake up every day still amazed that I can see the alarm clock.
+                    </p>
+                    <p class="font-semibold text-gray-800">
+                        - Jennifer K.
+                    </p>
                 </div>
-            </div>
-            
-            <!-- Mobile Stack -->
-            <div class="md:hidden space-y-6">
-                <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/ogJSGZn.png" alt="Patient testimonial 1" class="w-full h-auto object-cover">
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl text-[#E0B33A] mb-4">"</div>
+                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
+                        After 25 years of contacts, my eyes were done. Three weeks after EVO ICL, I hiked to the top of Mount Whitney and saw every detail with perfect clarity. Best decision I ever made.
+                    </p>
+                    <p class="font-semibold text-gray-800">
+                        - Marcus T.
+                    </p>
                 </div>
-                <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/MNWQVOY.png" alt="Patient testimonial 2" class="w-full h-auto object-cover">
-                </div>
-                <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/1MnSa0j.png" alt="Patient testimonial 3" class="w-full h-auto object-cover">
-                </div>
-                <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/W353D62.png" alt="Patient testimonial 4" class="w-full h-auto object-cover">
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl text-[#E0B33A] mb-4">"</div>
+                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
+                        My prescription was -13. I thought I'd wear thick glasses forever. Now I see better than I did with contacts, and nobody can tell I had surgery. Dr. Tooma is a magician.
+                    </p>
+                    <p class="font-semibold text-gray-800">
+                        - Sarah L.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Button 3 -->
-    <section class="bg-white py-16 px-6">
+    <!-- CTA BUTTON 3 -->
+    <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">See What's Possible for Me</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" 
+               class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                Talk to Dr. Tooma's Team Today
+            </a>
         </div>
     </section>
 
-    <!-- Note from Desk Section -->
-    <section style="background-color: #2E6060;" class="py-20 px-6">
+    <!-- NOTE FROM DESK SECTION -->
+    <section class="py-20 px-4" style="background-color: #006EB6;">
         <div class="max-w-4xl mx-auto">
-            <div class="glassmorphism rounded-lg p-10 md:p-16 shadow-2xl">
-                <img src="https://i.imgur.com/MVPrH5y.jpeg" alt="Dr. Scott Holley" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-xl">
-                <h2 class="text-2xl md:text-4xl font-bold text-center mb-8 text-white">A Note from the Desk of Dr. Scott Holley</h2>
-                <div class="space-y-6 text-base md:text-lg text-gray-100">
-                    <p>I see you.</p>
-                    <p>I've worked with hundreds of patients who felt exactly the way you do right now. You've been thinking about this for months, maybe years. You catch your reflection in a store window or see yourself on a Zoom call and barely recognize the tired, aged face looking back at you.</p>
-                    <p>You've tried the fillers, the Botox, the skincare routines. You've researched non-surgical options hoping for a miracle. But deep down, you know that true skin laxity and facial sagging require a real solution.</p>
-                    <p>Here's what I want you to know: wanting to look as vibrant as you feel isn't vain. It's human. And you deserve to feel confident and aligned with who you truly are.</p>
-                    <p>My commitment to you is simple. I won't push you into procedures you don't need. I won't promise unrealistic outcomes. I will listen to your concerns, show you what's genuinely achievable, and create a surgical plan designed specifically for your face and your goals.</p>
-                    <p>The consultation is pressure-free, honest, and the first step toward finally loving what you see in the mirror again.</p>
-                    <p class="text-right font-semibold text-white mt-8">Dr. Scott Holley</p>
+            <div class="glassmorphism rounded-lg p-8 md:p-12">
+                <img src="https://i.imgur.com/YyJx6Au.jpeg" 
+                     alt="Dr. Tom Tooma" 
+                     class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
+                
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+                    A Note from the Desk of Dr. Tom Tooma
+                </h2>
+                
+                <div class="space-y-6">
+                    <p class="text-base md:text-lg text-blue-100 leading-relaxed">
+                        I see you. I've worked with thousands of patients who felt exactly the way you do right now; frustrated with contacts, disappointed after being told LASIK won't work, maybe even resigned to a lifetime of glasses. You've probably spent months (or years) researching options, reading articles late at night, wondering if there's a solution that's both safe and effective for your eyes.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-blue-100 leading-relaxed">
+                        Here's what I want you to know: you're not stuck. EVO ICL was specifically designed for patients like you–people with high prescriptions, thin corneas, or chronic dry eye who deserve better than "sorry, you're not a candidate." I've helped people with -20 prescriptions see 20/20. I've given active professionals their spontaneous lifestyles back. And I've never had to compromise safety to do it.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-blue-100 leading-relaxed">
+                        If you're ready to explore what's possible for your eyes, let's talk. No pressure. No sales pitch. Just honest conversation about whether EVO ICL is the right fit for your vision and your life.
+                    </p>
                 </div>
+                
+                <p class="text-xl text-white font-semibold mt-8 text-right italic">
+                    Dr. Tom Tooma
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="bg-white py-20 px-6">
+    <!-- FAQ SECTION -->
+    <section class="bg-white py-20 px-4">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-gray-900">Frequently Asked <span style="color: #C8B28A;">Questions</span></h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                Frequently Asked <span class="text-[#E0B33A]">Questions</span>
+            </h2>
+            
             <div class="space-y-4">
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800" style="color: #C8B28A;">Will I look like I've had a facelift?</h3>
-                        <svg class="arrow w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center bg-white">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
+                            How is EVO ICL different from LASIK?
+                        </h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
                     </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700">No. The goal of modern facelift surgery is to create natural, refreshed results - not a pulled or overdone appearance. Dr. Holley's approach focuses on restoring youthful contours while preserving your unique facial characteristics and expressions.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800" style="color: #C8B28A;">How long is the recovery, and when can I return to work?</h3>
-                        <svg class="arrow w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700">Most patients return to work within 2-3 weeks wearing makeup to cover residual bruising. Initial swelling subsides within 10-14 days, though complete healing takes 3-6 months. Dr. Holley provides detailed recovery guidelines tailored to your lifestyle.</p>
+                    <div class="faq-answer px-6 pb-6 bg-gray-50">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            LASIK reshapes your cornea with a laser, permanently removing tissue. EVO ICL places a soft lens behind your iris without touching your cornea. It's reversible, doesn't cause dry eye, and works for prescriptions LASIK can't safely treat.
+                        </p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800" style="color: #C8B28A;">What's the difference between a traditional facelift and a deep plane facelift?</h3>
-                        <svg class="arrow w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center bg-white">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
+                            Does it hurt?
+                        </h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
                     </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700">A deep plane facelift repositions deeper facial structures for more dramatic, longer-lasting results with a natural appearance. Dr. Holley will recommend the technique best suited to your anatomy and goals during your consultation.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800" style="color: #C8B28A;">Am I too old (or too young) for a facelift?</h3>
-                        <svg class="arrow w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700">Age is less important than your specific concerns and overall health. Patients in their 40s may benefit from a mini facelift, while those in their 60s and 70s often achieve excellent results with traditional techniques. Dr. Holley evaluates each patient individually.</p>
+                    <div class="faq-answer px-6 pb-6 bg-gray-50">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            The procedure takes about 15 minutes per eye under numbing drops. Most patients report feeling slight pressure but no pain. You'll go home the same day and see clearly within hours.
+                        </p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800" style="color: #C8B28A;">How long do facelift results last?</h3>
-                        <svg class="arrow w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center bg-white">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
+                            What if my vision changes later in life?
+                        </h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
                     </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700">A well-performed facelift typically provides 10-15 years of improvement. While aging continues, you'll maintain a more youthful baseline than if you hadn't had surgery. Many patients find this one-time investment far more cost-effective than ongoing non-surgical treatments.</p>
+                    <div class="faq-answer px-6 pb-6 bg-gray-50">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            That's the beauty of EVO ICL - it's removable and replaceable. If your prescription changes or new technology emerges, we can adjust. You're never locked in.
+                        </p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800" style="color: #C8B28A;">Can I combine a facelift with other procedures?</h3>
-                        <svg class="arrow w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center bg-white">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
+                            How long does EVO ICL last?
+                        </h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
                     </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700">Absolutely. Many patients combine facelifts with neck lifts, brow lifts, eyelid surgery, or fat grafting for comprehensive facial rejuvenation. Dr. Holley will design a customized treatment plan based on your unique needs and desired outcomes.</p>
+                    <div class="faq-answer px-6 pb-6 bg-gray-50">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            The lens is designed to stay in place permanently, but unlike LASIK, it can be removed or exchanged if needed. Many patients have had their lenses for over 10 years with perfect results.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center bg-white">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
+                            What's the recovery like?
+                        </h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                    </div>
+                    <div class="faq-answer px-6 pb-6 bg-gray-50">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            Most patients see clearly within 24 hours and return to work in 1-2 days. You'll avoid strenuous exercise and swimming for a week, but normal activities resume quickly.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="faq-question p-6 flex justify-between items-center bg-white">
+                        <h3 class="text-lg md:text-xl font-semibold text-[#E0B33A] pr-8">
+                            Am I too old (or too young) for EVO ICL?
+                        </h3>
+                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                    </div>
+                    <div class="faq-answer px-6 pb-6 bg-gray-50">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            EVO ICL is FDA-approved for patients 21-45, but Dr. Tooma evaluates every case individually. If you're outside that range, there may still be excellent options for you.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA Section -->
-    <section style="background-color: #2E6060;" class="py-20 px-6">
+    <!-- FINAL CTA SECTION -->
+    <section class="py-20 px-4" style="background-color: #006EB6;">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-lg md:text-xl mb-10 text-gray-100">You've done the research. You've thought about this long enough. The only thing standing between you and finally loving your reflection again is one conversation. Dr. Holley's consultation is pressure-free, honest, and designed to give you clarity about whether a facelift is right for you. There's no obligation - just answers, realistic expectations, and a clear path forward. You deserve to feel confident and aligned with who you truly are. Let's make that happen.</p>
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Book My Consultation Now</a>
+            <p class="text-lg md:text-xl text-blue-100 mb-10 leading-relaxed">
+                You've spent long enough working around your vision. The morning routines. The travel hassle. The disappointment of being told "you're not a candidate." EVO ICL with Dr. Tooma gives you what you've been searching for - safe, proven, life-changing vision correction designed specifically for eyes like yours. Book your consultation and let's see what's possible.
+            </p>
+            
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" 
+               class="cta-button inline-block text-white text-xl font-bold px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                Take the First Step to Freedom
+            </a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer style="background-color: #2E6060;" class="py-12 px-6">
+    <!-- FOOTER -->
+    <footer class="py-12 px-4" style="background-color: #006EB6;">
         <div class="max-w-6xl mx-auto text-center">
-            <p class="text-white mb-4 font-semibold">West Michigan Plastic Surgery - A CompoundRev Marketing Partner</p>
-            <p class="text-sm text-gray-300">This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
+            <p class="text-white text-base mb-4">
+                NVision - A CompoundRev Marketing Partner
+            </p>
+            <p class="text-blue-200 text-sm leading-relaxed">
+                This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+            </p>
         </div>
     </footer>
 
