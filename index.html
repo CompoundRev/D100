@@ -15,7 +15,7 @@
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, #69BAC5 0%, #4a8a93 100%);
+            background: linear-gradient(135deg, #3C7D89 0%, #2a5860 100%);
         }
         
         .glassmorphism {
@@ -26,26 +26,14 @@
         
         .cta-button {
             background-color: #D9C6A3;
+            color: white;
+            font-weight: bold;
             transition: all 0.3s ease;
         }
         
         .cta-button:hover {
-            background-color: #c4b08e;
-            transform: translateY(-2px);
-        }
-        
-        .faq-question {
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .faq-question:hover {
-            background-color: #f9fafb;
-        }
-        
-        .arrow {
-            transition: transform 0.3s ease;
-            color: #D9C6A3;
+            background-color: #c4b08f;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
         
         .testimonial-slider {
@@ -54,16 +42,40 @@
         }
         
         @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
         
-        .testimonial-slider:hover {
-            animation-play-state: paused;
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            color: #D9C6A3;
+        }
+        
+        .arrow {
+            transition: transform 0.3s ease;
+            color: #D9C6A3;
+        }
+        
+        .accent-text {
+            color: #D9C6A3;
+        }
+        
+        .accent-underline {
+            border-bottom: 3px solid #D9C6A3;
+            display: inline-block;
+            padding-bottom: 2px;
+        }
+        
+        img:hover {
+            transform: scale(1.1);
+        }
+        
+        img {
+            transition: transform 0.3s ease;
         }
         
         @media (max-width: 768px) {
@@ -72,84 +84,125 @@
                 flex-direction: column;
             }
         }
-        
-        img {
-            transition: transform 0.3s ease;
-        }
-        
-        img:hover {
-            transform: scale(1.1);
-        }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section class="hero-gradient min-h-screen flex items-center justify-center px-4 py-20">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-sm md:text-base text-white mb-4 font-medium">For Calgary professionals refuse to let thinning hair define how they look or feel</p>
-            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">Your Hair Is Thinning & You See It Every Day. This Is How You <span class="text-[#D9C6A3]">Actually Stop It.</span></h1>
-            <p class="text-lg md:text-xl text-white mb-8 border-b-2 border-[#D9C6A3] inline-block pb-2">Non-surgical, science-backed hair restoration you can see and feel</p>
+            <p class="text-sm md:text-base text-white mb-6 opacity-90">For Calgary professionals refuse to let thinning hair define how they look or feel</p>
             
-            <div class="mb-10">
-                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 max-w-2xl mx-auto">
-                    <p class="text-white text-sm mb-4"><!-- Add YouTube embed here --></p>
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Your Hair Is Thinning & You See It Every Day. <span class="accent-text">This Is How You Actually Stop It.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-white mb-12 opacity-90">
+                <span class="accent-underline">Non-surgical, science-backed hair restoration you can see and feel</span>
+            </p>
+            
+            <!-- VSL VIDEO -->
+            <div class="mb-12 max-w-3xl mx-auto">
+                <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe 
+                        src="https://www.youtube.com/embed/u31qwQUeGuM" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
+                    ></iframe>
                 </div>
+                <a href="https://youtu.be/u31qwQUeGuM" target="_blank" class="text-sm text-white opacity-75 hover:opacity-100 mt-4 inline-block">Having trouble? Watch on YouTube →</a>
             </div>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Claim My Consultation Spot</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl">
+                Claim My Consultation Spot
+            </a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="py-20 px-4 bg-white">
+    <!-- ABOUT SECTION -->
+    <section class="bg-white py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Meet Leslie Poirier, the medical mind behind every treatment at <span class="text-[#D9C6A3]">West Side Laser.</span></h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                Meet <span class="accent-text">Leslie Poirier</span>, the medical mind behind every treatment at West Side Laser.
+            </h2>
+            
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <img src="https://i.imgur.com/qP8piYE.png" alt="Leslie Poirier" class="w-96 h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
                 </div>
+                
                 <div class="space-y-6">
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">Leslie isn't just a Nurse Practitioner, she's a Master's-trained specialist who's spent nearly two decades refining her expertise in helping clients age gracefully and naturally. Since earning her certification from Dalhousie University and her Bachelor of Nursing from the University of Calgary, she's built a reputation for delivering results that look effortless, never overdone.</p>
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">As our Medical Director since 2017, Leslie personally oversees every Alma TED protocol, ensuring you receive the same science-backed, medically sound treatment she'd recommend to her own family. Her philosophy is simple: help you look like the best version of yourself, not someone else entirely.</p>
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">When you work with Leslie and the West Side Laser team, you're in the hands of medical professionals who understand that your hair restoration journey deserves clinical precision combined with genuine care.</p>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        Leslie isn't just a Nurse Practitioner, she's a Master's-trained specialist who's spent nearly two decades refining her expertise in helping clients age gracefully and naturally. Since earning her certification from Dalhousie University and her Bachelor of Nursing from the University of Calgary, she's built a reputation for delivering results that look effortless, never overdone.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        As our Medical Director since 2017, Leslie personally oversees every Alma TED protocol, ensuring you receive the same science-backed, medically sound treatment she'd recommend to her own family. Her philosophy is simple: help you look like the best version of yourself, not someone else entirely.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        When you work with Leslie and the West Side Laser team, you're in the hands of medical professionals who understand that your hair restoration journey deserves clinical precision combined with genuine care.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Button 2 -->
-    <section class="py-16 px-4 bg-gradient-to-r from-gray-50 to-gray-100">
+    <!-- CTA BUTTON 2 -->
+    <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Yes, I Want Thicker Hair</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl">
+                Yes, I Want Thicker Hair
+            </a>
         </div>
     </section>
 
-    <!-- Value Pillars Section -->
-    <section class="py-20 px-4" style="background-color: #69BAC5;">
+    <!-- VALUE PILLARS SECTION -->
+    <section class="py-20 px-4" style="background-color: #3C7D89;">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-white mb-16 text-center">WHY PEOPLE CHOOSE WEST SIDE LASER</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-white mb-16 text-center">
+                WHY PEOPLE CHOOSE WEST SIDE LASER
+            </h2>
+            
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Visible Results in Weeks, Not Years</h3>
-                    <p class="text-base md:text-lg text-white leading-relaxed">Most patients see noticeable thickness within three treatments (90 days), so you're not waiting endlessly while your hair continues thinning.</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
+                        Visible Results in Weeks, Not Years
+                    </h3>
+                    <p class="text-base md:text-lg text-white opacity-90">
+                        Most patients see noticeable thickness within three treatments (90 days), so you're not waiting endlessly while your hair continues thinning.
+                    </p>
                 </div>
+                
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">No Surgery, No Daily Medications</h3>
-                    <p class="text-base md:text-lg text-white leading-relaxed">This is ultrasound-based hair restoration - no scalpels, no scarring, no pills with side effects, and no messy topical regimens to remember every single day.</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
+                        No Surgery, No Daily Medications
+                    </h3>
+                    <p class="text-base md:text-lg text-white opacity-90">
+                        This is ultrasound-based hair restoration - no scalpels, no scarring, no pills with side effects, and no messy topical regimens to remember every single day.
+                    </p>
                 </div>
+                
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Personalized Treatment Plans</h3>
-                    <p class="text-base md:text-lg text-white leading-relaxed">Your hair loss pattern is unique. We customize every Alma TED protocol based on your specific thinning areas, goals, and timeline - not a one-size-fits-all approach.</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">
+                        Personalized Treatment Plans
+                    </h3>
+                    <p class="text-base md:text-lg text-white opacity-90">
+                        Your hair loss pattern is unique. We customize every Alma TED protocol based on your specific thinning areas, goals, and timeline - not a one-size-fits-all approach.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-20 px-4 bg-gray-50">
+    <!-- TESTIMONIALS SECTION -->
+    <section class="bg-white py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-16 text-center">Real Transformations from <span class="text-[#D9C6A3]">People Just Like You</span></h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-16 text-center">
+                Real Transformations from People Just Like You
+            </h2>
             
             <!-- Desktop Slider -->
             <div class="hidden md:block overflow-hidden">
@@ -159,36 +212,44 @@
                             <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 1" class="w-full h-full object-cover">
                         </div>
                     </div>
+                    
                     <div class="flex-shrink-0 px-4">
                         <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
                             <img src="https://i.imgur.com/uPJ4VfO.png" alt="Testimonial 2" class="w-full h-full object-cover">
                         </div>
                     </div>
+                    
                     <div class="flex-shrink-0 px-4">
                         <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
                             <img src="https://i.imgur.com/wSRmIiD.png" alt="Testimonial 3" class="w-full h-full object-cover">
                         </div>
                     </div>
+                    
                     <div class="flex-shrink-0 px-4">
                         <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
                             <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 4" class="w-full h-full object-cover">
                         </div>
                     </div>
+                    
+                    <!-- Duplicate for infinite loop -->
                     <div class="flex-shrink-0 px-4">
                         <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
                             <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 1" class="w-full h-full object-cover">
                         </div>
                     </div>
+                    
                     <div class="flex-shrink-0 px-4">
                         <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
                             <img src="https://i.imgur.com/uPJ4VfO.png" alt="Testimonial 2" class="w-full h-full object-cover">
                         </div>
                     </div>
+                    
                     <div class="flex-shrink-0 px-4">
                         <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
                             <img src="https://i.imgur.com/wSRmIiD.png" alt="Testimonial 3" class="w-full h-full object-cover">
                         </div>
                     </div>
+                    
                     <div class="flex-shrink-0 px-4">
                         <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
                             <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 4" class="w-full h-full object-cover">
@@ -200,128 +261,189 @@
             <!-- Mobile Stack -->
             <div class="md:hidden space-y-6">
                 <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 1" class="w-full h-auto object-cover">
+                    <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 1" class="w-full h-auto">
                 </div>
+                
                 <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/uPJ4VfO.png" alt="Testimonial 2" class="w-full h-auto object-cover">
+                    <img src="https://i.imgur.com/uPJ4VfO.png" alt="Testimonial 2" class="w-full h-auto">
                 </div>
+                
                 <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/wSRmIiD.png" alt="Testimonial 3" class="w-full h-auto object-cover">
+                    <img src="https://i.imgur.com/wSRmIiD.png" alt="Testimonial 3" class="w-full h-auto">
                 </div>
+                
                 <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 4" class="w-full h-auto object-cover">
+                    <img src="https://i.imgur.com/DP3aJmR.png" alt="Testimonial 4" class="w-full h-auto">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Button 3 -->
-    <section class="py-16 px-4 bg-white">
+    <!-- CTA BUTTON 3 -->
+    <section class="bg-white py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Yes, I Want Thicker Hair</a>
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl">
+                Yes, I Want Thicker Hair
+            </a>
         </div>
     </section>
 
-    <!-- Note From Desk Section -->
-    <section class="py-20 px-4" style="background-color: #69BAC5;">
+    <!-- NOTE FROM DESK SECTION -->
+    <section class="py-20 px-4" style="background-color: #3C7D89;">
         <div class="max-w-4xl mx-auto">
-            <div class="glassmorphism p-10 md:p-16 rounded-lg">
-                <img src="https://i.imgur.com/0S6KmqN.jpeg" alt="Sean Carson" class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
-                <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 text-center">NOTE FROM THE DESK OF SEAN CARSON</h2>
+            <div class="glassmorphism p-8 md:p-12 rounded-lg">
+                <img src="https://i.imgur.com/0S6KmqN.jpeg" alt="Sean Carson" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-xl">
+                
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
+                    NOTE FROM THE DESK OF SEAN CARSON
+                </h2>
+                
                 <div class="space-y-6 text-white">
-                    <p class="text-base md:text-lg leading-relaxed">I see you.</p>
-                    <p class="text-base md:text-lg leading-relaxed">I've worked with hundreds of Calgary professionals who felt exactly the way you do right now - frustrated by thinning hair, tired of "solutions" that don't work, and wondering if it's even worth trying one more thing.</p>
-                    <p class="text-base md:text-lg leading-relaxed">Here's what I know after more than a decade in this industry: hair loss affects how you see yourself every single day. The morning mirror. The photos. The constant awareness that something you used to take for granted is slipping away.</p>
-                    <p class="text-base md:text-lg leading-relaxed">That's why we brought Alma TED to West Side Laser. It's not another empty promise, it's FDA-cleared technology that actually delivers visible regrowth without surgery or daily medications. And under Leslie Poirier's medical direction, we've helped countless clients reclaim confidence they thought was gone forever.</p>
-                    <p class="text-base md:text-lg leading-relaxed">If you've been thinking about this for months (or years), let's have an honest conversation about what's possible for your hair. No pressure, no sales pitch - just real answers from medical professionals who genuinely care about your outcome.</p>
-                    <p class="text-base md:text-lg leading-relaxed">Your consultation is free. Your decision is entirely yours. But the transformation? That's something you'll see in the mirror every single day.</p>
-                    <p class="text-base md:text-lg font-semibold mt-8">Sean Carson</p>
+                    <p class="text-base md:text-lg leading-relaxed">
+                        I see you.
+                    </p>
+                    
+                    <p class="text-base md:text-lg leading-relaxed">
+                        I've worked with hundreds of Calgary professionals who felt exactly the way you do right now - frustrated by thinning hair, tired of "solutions" that don't work, and wondering if it's even worth trying one more thing.
+                    </p>
+                    
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Here's what I know after more than a decade in this industry: hair loss affects how you see yourself every single day. The morning mirror. The photos. The constant awareness that something you used to take for granted is slipping away.
+                    </p>
+                    
+                    <p class="text-base md:text-lg leading-relaxed">
+                        That's why we brought Alma TED to West Side Laser. It's not another empty promise, it's FDA-cleared technology that actually delivers visible regrowth without surgery or daily medications. And under Leslie Poirier's medical direction, we've helped countless clients reclaim confidence they thought was gone forever.
+                    </p>
+                    
+                    <p class="text-base md:text-lg leading-relaxed">
+                        If you've been thinking about this for months (or years), let's have an honest conversation about what's possible for your hair. No pressure, no sales pitch - just real answers from medical professionals who genuinely care about your outcome.
+                    </p>
+                    
+                    <p class="text-base md:text-lg leading-relaxed">
+                        Your consultation is free. Your decision is entirely yours. But the transformation? That's something you'll see in the mirror every single day.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="py-20 px-4 bg-white">
+    <!-- FAQ SECTION -->
+    <section class="bg-white py-20 px-4">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Frequently Asked <span class="text-[#D9C6A3]">Questions</span></h2>
-            <div class="space-y-4">
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">How is Alma TED different from Rogaine or other topical treatments?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                Frequently Asked Questions
+            </h2>
+            
+            <div class="space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            How is Alma TED different from Rogaine or other topical treatments?
+                        </h3>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Rogaine relies on daily chemical application that many people find messy and inconsistent. Alma TED uses ultrasound technology combined with topical growth factors to penetrate deeper into the scalp, stimulating follicles at a cellular level. It's a completely different mechanism - and it doesn't require daily commitment.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">Will people be able to tell I've had treatment?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
-                    </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">No. The results look completely natural because you're regrowing your own hair, not transplanting plugs or wearing anything artificial. Most clients say people notice they look "refreshed" but can't pinpoint why.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            Rogaine relies on daily chemical application that many people find messy and inconsistent. Alma TED uses ultrasound technology combined with topical growth factors to penetrate deeper into the scalp, stimulating follicles at a cellular level. It's a completely different mechanism - and it doesn't require daily commitment.
+                        </p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">How long before I see results?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            Will people be able to tell I've had treatment?
+                        </h3>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Most patients notice visible improvements within 90 days (approximately 3 treatments). Some see changes even sooner. This is significantly faster than medications like Propecia, which can take 6-12 months.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">Is it painful?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
-                    </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Not at all. Alma TED uses acoustic sound waves and feels like a gentle massage on the scalp. There's no downtime, and you can return to normal activities immediately after treatment.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            No. The results look completely natural because you're regrowing your own hair, not transplanting plugs or wearing anything artificial. Most clients say people notice they look "refreshed" but can't pinpoint why.
+                        </p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">How much does it cost?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            How long before I see results?
+                        </h3>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Pricing depends on your specific treatment plan, which we'll discuss during your consultation. We believe in transparent pricing with no hidden fees - you'll know exactly what to expect before committing to anything.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            Most patients notice visible improvements within 90 days (approximately 3 treatments). Some see changes even sooner. This is significantly faster than medications like Propecia, which can take 6-12 months.
+                        </p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question flex justify-between items-center py-6 px-4">
-                        <h3 class="text-lg md:text-xl font-semibold text-[#D9C6A3] pr-8">Is this safe?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">↓</span>
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            Is it painful?
+                        </h3>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer px-4 pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Yes. Alma TED is FDA-cleared and administered under the supervision of our Medical Director, Leslie Poirier. It's a non-invasive treatment with an excellent safety profile and no systemic side effects.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            Not at all. Alma TED uses acoustic sound waves and feels like a gentle massage on the scalp. There's no downtime, and you can return to normal activities immediately after treatment.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            How much does it cost?
+                        </h3>
+                        <span class="arrow text-2xl">▼</span>
+                    </div>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            Pricing depends on your specific treatment plan, which we'll discuss during your consultation. We believe in transparent pricing with no hidden fees - you'll know exactly what to expect before committing to anything.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            Is this safe?
+                        </h3>
+                        <span class="arrow text-2xl">▼</span>
+                    </div>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            Yes. Alma TED is FDA-cleared and administered under the supervision of our Medical Director, Leslie Poirier. It's a non-invasive treatment with an excellent safety profile and no systemic side effects.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA Section -->
-    <section class="py-20 px-4" style="background-color: #69BAC5;">
+    <!-- FINAL CTA SECTION -->
+    <section class="py-20 px-4" style="background-color: #3C7D89;">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-lg md:text-xl text-white mb-10 leading-relaxed">You've spent enough time watching your hair thin and wondering if anything will actually work. The difference between where you are now and where you want to be is one conversation. Book your free consultation today and let's create a personalized plan that brings back the hair - and the confidence - you've been missing. No pressure, no commitments - just honest answers and a clear path forward.</p>
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold">Book My Free Consultation Now</a>
+            <p class="text-lg md:text-xl text-white mb-12 leading-relaxed">
+                You've spent enough time watching your hair thin and wondering if anything will actually work. The difference between where you are now and where you want to be is one conversation. Book your free consultation today and let's create a personalized plan that brings back the hair - and the confidence - you've been missing. No pressure, no commitments - just honest answers and a clear path forward.
+            </p>
+            
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg shadow-xl hover:shadow-2xl">
+                Book My Free Consultation Now
+            </a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-12 px-4" style="background-color: #69BAC5;">
+    <!-- FOOTER -->
+    <footer class="py-12 px-4" style="background-color: #3C7D89;">
         <div class="max-w-6xl mx-auto text-center">
-            <p class="text-white text-sm md:text-base mb-4">West Side Laser - A CompoundRev Marketing Partner</p>
-            <p class="text-white text-xs md:text-sm leading-relaxed">This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
+            <p class="text-white mb-4 font-semibold">
+                West Side Laser - A CompoundRev Marketing Partner
+            </p>
+            <p class="text-white text-sm opacity-75">
+                This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+            </p>
         </div>
     </footer>
 
