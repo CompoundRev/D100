@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center for Plastic Surgery - Facelift</title>
+    <title>Center for Plastic Surgery - Facelift Consultation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html {
@@ -30,16 +30,18 @@
         }
         
         .cta-button:hover {
-            background-color: #b89865;
-            transform: translateY(-2px);
+            background-color: #b89660;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
         
-        .image-hover {
-            transition: transform 0.3s ease;
+        .accent-text {
+            color: #C7A874;
         }
         
-        .image-hover:hover {
-            transform: scale(1.1);
+        .underline-accent {
+            border-bottom: 3px solid #C7A874;
+            display: inline-block;
+            padding-bottom: 4px;
         }
         
         .faq-question {
@@ -48,7 +50,7 @@
         }
         
         .faq-question:hover {
-            background-color: #f9fafb;
+            color: #C7A874;
         }
         
         .arrow {
@@ -86,24 +88,26 @@
             }
         }
         
-        .accent-underline {
-            border-bottom: 3px solid #C7A874;
-            display: inline-block;
-            padding-bottom: 4px;
+        img {
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Hero Section -->
-    <section class="hero-gradient min-h-screen flex items-center justify-center px-4 py-16">
+    <section class="hero-gradient min-h-screen flex items-center justify-center px-4 py-20">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-gray-300 text-sm md:text-base mb-6 font-light">For accomplished professionals who refuse to let aging define their next chapter</p>
+            <p class="text-white text-sm md:text-base mb-6 opacity-90">For accomplished professionals who refuse to let aging define their next chapter</p>
             <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Reclaim the Confident, Defined <span style="color: #C7A874;">Reflection You Remember</span>
+                Reclaim the <span class="accent-text">Confident, Defined Reflection</span> You Remember
             </h1>
-            <p class="text-lg md:text-xl text-gray-200 mb-12">
-                <span class="accent-underline">Discreet facial rejuvenation from Washington's most trusted surgeons</span>
+            <p class="text-xl md:text-2xl text-white mb-12 opacity-90">
+                <span class="underline-accent">Discreet facial rejuvenation from Washington's most trusted surgeons</span>
             </p>
             
             <!-- VSL Video Section -->
@@ -117,12 +121,12 @@
                         class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
                     ></iframe>
                 </div>
-                <a href="https://youtu.be/e0IaBCAU6XU" target="_blank" class="text-sm text-gray-300 hover:text-white mt-4 inline-block">
+                <a href="https://youtu.be/e0IaBCAU6XU" target="_blank" class="text-white text-sm mt-4 inline-block opacity-75 hover:opacity-100">
                     Having trouble? Watch on YouTube →
                 </a>
             </div>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg font-bold text-white shadow-xl hover:shadow-2xl">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl hover:shadow-2xl">
                 Reserve My Consultation Now
             </a>
         </div>
@@ -131,16 +135,18 @@
     <!-- About Section -->
     <section class="bg-white py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #C7A874;">Meet Your Surgeons</h2>
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/3 flex justify-center">
-                    <img src="https://i.imgur.com/QeQhiKO.jpeg" alt="Surgeon" class="w-96 h-auto object-cover rounded-lg shadow-xl image-hover mx-auto">
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+                Meet Your <span class="accent-text">Surgeons</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://i.imgur.com/QeQhiKO.jpeg" alt="Center for Plastic Surgery Surgeons" class="w-96 h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
                 </div>
-                <div class="md:w-2/3">
-                    <p class="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
+                <div>
+                    <p class="text-base md:text-lg text-gray-700 mb-6">
                         The surgeons at Center for Plastic Surgery—Dr. Samir S. Rao, Dr. Frank P. Albino, Dr. Arjun P. Kanuri, and Dr. Christopher M. Fleury—have built their reputations on something more than technical skill: they genuinely understand what it feels like to look in the mirror and not recognize the vibrant person you know you are.
                     </p>
-                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                    <p class="text-base md:text-lg text-gray-700">
                         With board certification, fellowship training, and decades of experience in facial rejuvenation, our team has helped hundreds of professionals just like you reclaim their confidence. We've seen the relief in our patients' eyes when they realize their results look completely natural. When friends say "you look amazing" without knowing exactly why. We take the time to listen to your specific concerns, answer every question, and create a surgical plan tailored to your unique facial structure and aesthetic goals. You're not just another procedure to us. You're someone deserving of exceptional care and results that last.
                     </p>
                 </div>
@@ -151,7 +157,7 @@
     <!-- CTA Button 2 -->
     <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg font-bold text-white shadow-xl hover:shadow-2xl">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl hover:shadow-2xl">
                 Start Your Transformation Journey
             </a>
         </div>
@@ -160,72 +166,60 @@
     <!-- Value Pillars Section -->
     <section class="py-20 px-4" style="background-color: #172469;">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-white">Why People Choose Center for Plastic Surgery</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-16">
+                Why People Choose Center for Plastic Surgery
+            </h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4 text-white">Natural-Looking Results</h3>
-                    <p class="text-gray-200 leading-relaxed">We specialize in facelifts that restore your youthful contours without making you look "done." You'll look like yourself—refreshed, revitalized, and confident.</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Natural-Looking Results</h3>
+                    <p class="text-white opacity-90">We specialize in facelifts that restore your youthful contours without making you look "done." You'll look like yourself—refreshed, revitalized, and confident.</p>
                 </div>
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4 text-white">Proven Longevity</h3>
-                    <p class="text-gray-200 leading-relaxed">Our advanced facelift techniques deliver results that last 10-15 years or more, giving you a permanent solution instead of temporary fixes that fade in months.</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Proven Longevity</h3>
+                    <p class="text-white opacity-90">Our advanced facelift techniques deliver results that last 10-15 years or more, giving you a permanent solution instead of temporary fixes that fade in months.</p>
                 </div>
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4 text-white">Customized Surgical Plans</h3>
-                    <p class="text-gray-200 leading-relaxed">No two faces age the same way. We create personalized treatment plans that address your specific concerns, facial structure, and aesthetic goals.</p>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Customized Surgical Plans</h3>
+                    <p class="text-white opacity-90">No two faces age the same way. We create personalized treatment plans that address your specific concerns, facial structure, and aesthetic goals.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="bg-gray-50 py-20 px-4">
+    <section class="bg-white py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-gray-900">Real Results From People Just Like You</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+                Real Results From <span class="accent-text">People Just Like You</span>
+            </h2>
             
             <!-- Desktop Slider -->
             <div class="hidden md:block overflow-hidden">
                 <div class="testimonial-slider">
-                    <div class="flex-shrink-0 px-4">
-                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
-                            <img src="https://i.imgur.com/YwkHyix.png" alt="Patient testimonial" class="w-full h-full object-cover">
-                        </div>
+                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
+                        <img src="https://i.imgur.com/YwkHyix.png" alt="Patient testimonial 1" class="w-full h-full object-cover">
                     </div>
-                    <div class="flex-shrink-0 px-4">
-                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
-                            <img src="https://i.imgur.com/WUIsJoK.png" alt="Patient testimonial" class="w-full h-full object-cover">
-                        </div>
+                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
+                        <img src="https://i.imgur.com/WUIsJoK.png" alt="Patient testimonial 2" class="w-full h-full object-cover">
                     </div>
-                    <div class="flex-shrink-0 px-4">
-                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
-                            <img src="https://i.imgur.com/wpRWKnw.png" alt="Patient testimonial" class="w-full h-full object-cover">
-                        </div>
+                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
+                        <img src="https://i.imgur.com/wpRWKnw.png" alt="Patient testimonial 3" class="w-full h-full object-cover">
                     </div>
-                    <div class="flex-shrink-0 px-4">
-                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
-                            <img src="https://i.imgur.com/7KTeqrT.png" alt="Patient testimonial" class="w-full h-full object-cover">
-                        </div>
+                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
+                        <img src="https://i.imgur.com/7KTeqrT.png" alt="Patient testimonial 4" class="w-full h-full object-cover">
                     </div>
                     <!-- Duplicate for infinite loop -->
-                    <div class="flex-shrink-0 px-4">
-                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
-                            <img src="https://i.imgur.com/YwkHyix.png" alt="Patient testimonial" class="w-full h-full object-cover">
-                        </div>
+                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
+                        <img src="https://i.imgur.com/YwkHyix.png" alt="Patient testimonial 1" class="w-full h-full object-cover">
                     </div>
-                    <div class="flex-shrink-0 px-4">
-                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
-                            <img src="https://i.imgur.com/WUIsJoK.png" alt="Patient testimonial" class="w-full h-full object-cover">
-                        </div>
+                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
+                        <img src="https://i.imgur.com/WUIsJoK.png" alt="Patient testimonial 2" class="w-full h-full object-cover">
                     </div>
-                    <div class="flex-shrink-0 px-4">
-                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
-                            <img src="https://i.imgur.com/wpRWKnw.png" alt="Patient testimonial" class="w-full h-full object-cover">
-                        </div>
+                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
+                        <img src="https://i.imgur.com/wpRWKnw.png" alt="Patient testimonial 3" class="w-full h-full object-cover">
                     </div>
-                    <div class="flex-shrink-0 px-4">
-                        <div class="w-96 h-64 rounded-lg overflow-hidden shadow-xl">
-                            <img src="https://i.imgur.com/7KTeqrT.png" alt="Patient testimonial" class="w-full h-full object-cover">
-                        </div>
+                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
+                        <img src="https://i.imgur.com/7KTeqrT.png" alt="Patient testimonial 4" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -233,16 +227,16 @@
             <!-- Mobile Stack -->
             <div class="md:hidden space-y-6">
                 <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/YwkHyix.png" alt="Patient testimonial" class="w-full h-auto">
+                    <img src="https://i.imgur.com/YwkHyix.png" alt="Patient testimonial 1" class="w-full h-auto">
                 </div>
                 <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/WUIsJoK.png" alt="Patient testimonial" class="w-full h-auto">
+                    <img src="https://i.imgur.com/WUIsJoK.png" alt="Patient testimonial 2" class="w-full h-auto">
                 </div>
                 <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/wpRWKnw.png" alt="Patient testimonial" class="w-full h-auto">
+                    <img src="https://i.imgur.com/wpRWKnw.png" alt="Patient testimonial 3" class="w-full h-auto">
                 </div>
                 <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/7KTeqrT.png" alt="Patient testimonial" class="w-full h-auto">
+                    <img src="https://i.imgur.com/7KTeqrT.png" alt="Patient testimonial 4" class="w-full h-auto">
                 </div>
             </div>
         </div>
@@ -251,7 +245,7 @@
     <!-- CTA Button 3 -->
     <section class="bg-white py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg font-bold text-white shadow-xl hover:shadow-2xl">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl hover:shadow-2xl">
                 Start Your Transformation Journey
             </a>
         </div>
@@ -262,18 +256,22 @@
         <div class="max-w-4xl mx-auto">
             <div class="glassmorphism p-8 md:p-12 rounded-lg">
                 <img src="https://i.imgur.com/TA1OfG7.jpeg" alt="Dr. Arjun P. Kanuri" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-xl">
-                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-white">A Note From the Desk of Dr. Arjun P. Kanuri</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-8">
+                    A Note From the Desk of Dr. Arjun P. Kanuri
+                </h2>
                 <div class="space-y-6">
-                    <p class="text-base md:text-lg text-gray-200 leading-relaxed">
+                    <p class="text-base md:text-lg text-white">
                         I see you. I've worked with hundreds of accomplished professionals who felt exactly the way you do right now; frustrated that the mirror doesn't reflect the vital, energetic person you know yourself to be.
                     </p>
-                    <p class="text-base md:text-lg text-gray-200 leading-relaxed">
+                    <p class="text-base md:text-lg text-white">
                         Maybe you've been researching this for months, maybe even years. You've probably scrolled through before-and-after photos late at night, wondering if the results will look natural, if the recovery is manageable, if it's finally time. I want you to know that choosing to have a facelift is one of the most empowering decisions my patients make, not because it changes who they are, but because it restores what time has taken. You deserve to walk into every room with the confidence your success has earned.
                     </p>
-                    <p class="text-base md:text-lg text-gray-200 leading-relaxed">
+                    <p class="text-base md:text-lg text-white">
                         I've performed hundreds of this procedure and have walked hand in hand with all of my patients. Ensuring this is one of the best decisions they make in their life.  Let's talk about how we can help you get there.
                     </p>
-                    <p class="text-lg font-semibold text-right mt-8 text-white">Dr. Arjun P. Kanuri</p>
+                    <p class="text-lg md:text-xl text-white font-semibold mt-8 text-right italic">
+                        Dr. Arjun P. Kanuri
+                    </p>
                 </div>
             </div>
         </div>
@@ -282,65 +280,67 @@
     <!-- FAQ Section -->
     <section class="bg-white py-20 px-4">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-gray-900">Frequently Asked Questions</h2>
-            <div class="space-y-4">
-                <div class="border-b border-gray-200">
-                    <div class="faq-question py-6 flex justify-between items-center">
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+                Frequently Asked <span class="accent-text">Questions</span>
+            </h2>
+            <div class="space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
                         <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Will people know I had a facelift?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">When performed by skilled, board-certified surgeons, a facelift should look completely natural. Our goal is for people to say "you look amazing" without being able to pinpoint why. We specialize in subtle, age-appropriate rejuvenation that restores rather than transforms.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700">When performed by skilled, board-certified surgeons, a facelift should look completely natural. Our goal is for people to say "you look amazing" without being able to pinpoint why. We specialize in subtle, age-appropriate rejuvenation that restores rather than transforms.</p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question py-6 flex justify-between items-center">
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
                         <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">What is recovery really like?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Most patients return to social activities within 2-3 weeks. Bruising and swelling are temporary and manageable. We'll give you a detailed recovery plan and support you throughout the healing process.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700">Most patients return to social activities within 2-3 weeks. Bruising and swelling are temporary and manageable. We'll give you a detailed recovery plan and support you throughout the healing process.</p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question py-6 flex justify-between items-center">
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
                         <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Am I too young or too old for a facelift?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">There's no "right" age, only the right time for you. We've successfully performed facelifts on patients in their 40s through their 70s. What matters most is skin quality, overall health, and your aesthetic goals.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700">There's no "right" age, only the right time for you. We've successfully performed facelifts on patients in their 40s through their 70s. What matters most is skin quality, overall health, and your aesthetic goals.</p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question py-6 flex justify-between items-center">
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
                         <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">What if I'm worried about scarring?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Our surgeons use advanced techniques that place incisions in natural contours and hairlines, making them virtually invisible once healed. We prioritize both results and discretion.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700">Our surgeons use advanced techniques that place incisions in natural contours and hairlines, making them virtually invisible once healed. We prioritize both results and discretion.</p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question py-6 flex justify-between items-center">
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
                         <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Can a facelift be combined with other procedures?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Absolutely. Many patients combine facelifts with eyelid surgery, brow lifts, or laser treatments for comprehensive facial rejuvenation. We'll discuss all options during your consultation.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700">Absolutely. Many patients combine facelifts with eyelid surgery, brow lifts, or laser treatments for comprehensive facial rejuvenation. We'll discuss all options during your consultation.</p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200">
-                    <div class="faq-question py-6 flex justify-between items-center">
+                <div class="border-b border-gray-200 pb-6">
+                    <div class="faq-question flex justify-between items-center">
                         <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Is it safe at my age?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
+                        <span class="arrow text-2xl">▼</span>
                     </div>
-                    <div class="faq-answer pb-6">
-                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">Facelift surgery is safe for healthy adults of varying ages. During your consultation, we'll review your medical history and ensure you're an excellent candidate. Safety is our top priority.</p>
+                    <div class="faq-answer mt-4">
+                        <p class="text-base md:text-lg text-gray-700">Facelift surgery is safe for healthy adults of varying ages. During your consultation, we'll review your medical history and ensure you're an excellent candidate. Safety is our top priority.</p>
                     </div>
                 </div>
             </div>
@@ -350,10 +350,10 @@
     <!-- Final CTA Section -->
     <section class="py-20 px-4" style="background-color: #172469;">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-lg md:text-xl text-gray-200 mb-12 leading-relaxed">
+            <p class="text-lg md:text-xl text-white mb-12 leading-relaxed">
                 If you're reading this, you already know that no amount of skincare, injectables, or "maybe next year" thinking will give you the transformation you're looking for. You deserve a permanent solution delivered by surgeons who understand the emotional weight of this decision. Let's talk about your goals, your concerns, and how we can help you reclaim the face that matches the life you've built. Your consultation is the beginning of coming home to yourself.
             </p>
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 rounded-lg font-bold text-white shadow-xl hover:shadow-2xl">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl hover:shadow-2xl">
                 Schedule My Private Consultation
             </a>
         </div>
@@ -362,8 +362,10 @@
     <!-- Footer -->
     <footer class="py-12 px-4" style="background-color: #172469;">
         <div class="max-w-6xl mx-auto text-center">
-            <p class="text-white mb-4 font-semibold">Center for Plastic Surgery - A CompoundRev Marketing Partner</p>
-            <p class="text-gray-300 text-sm leading-relaxed">
+            <p class="text-white text-base mb-4">
+                Center for Plastic Surgery - A CompoundRev Marketing Partner
+            </p>
+            <p class="text-white text-sm opacity-75">
                 This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
             </p>
         </div>
