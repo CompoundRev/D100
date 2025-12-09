@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center for Plastic Surgery - Facelift Consultation</title>
+    <title>Miami Beach Plastic Surgery - Facelift & Facial Rejuvenation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html {
@@ -15,7 +15,7 @@
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, #172469 0%, #0f1a4a 100%);
+            background: linear-gradient(135deg, #357BB1 0%, #245a82 100%);
         }
         
         .glassmorphism {
@@ -24,22 +24,23 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .cta-button {
-            background-color: #C7A874;
+        .btn-primary {
+            background-color: #D7A86E;
             transition: all 0.3s ease;
         }
         
-        .cta-button:hover {
-            background-color: #b89660;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        .btn-primary:hover {
+            background-color: #c49659;
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
         
         .accent-text {
-            color: #C7A874;
+            color: #D7A86E;
         }
         
-        .underline-accent {
-            border-bottom: 3px solid #C7A874;
+        .accent-underline {
+            border-bottom: 3px solid #D7A86E;
             display: inline-block;
             padding-bottom: 4px;
         }
@@ -50,42 +51,20 @@
         }
         
         .faq-question:hover {
-            color: #C7A874;
+            color: #D7A86E;
         }
         
         .arrow {
             transition: transform 0.3s ease;
-            color: #C7A874;
+            color: #D7A86E;
         }
         
-        .faq-answer {
-            overflow: hidden;
-            transition: all 0.3s ease;
+        .testimonial-card {
+            transition: transform 0.3s ease;
         }
         
-        .testimonial-slider {
-            display: flex;
-            animation: scroll 20s linear infinite;
-        }
-        
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-        
-        .testimonial-slider:hover {
-            animation-play-state: paused;
-        }
-        
-        @media (max-width: 768px) {
-            .testimonial-slider {
-                animation: none;
-                flex-direction: column;
-            }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
         }
         
         img {
@@ -93,7 +72,7 @@
         }
         
         img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -102,175 +81,205 @@
     <!-- Hero Section -->
     <section class="hero-gradient min-h-screen flex items-center justify-center px-4 py-20">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-white text-sm md:text-base mb-6 opacity-90">For accomplished professionals who refuse to let aging define their next chapter</p>
+            <p class="text-sm md:text-base text-gray-200 mb-6 max-w-3xl mx-auto">
+                For accomplished South Florida professionals who refuse to let their reflection tell a different story than the vitality they feel inside.
+            </p>
+            
             <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Reclaim the <span class="accent-text">Confident, Defined Reflection</span> You Remember
+                Restore the Defined Jawline and <span class="accent-text">Refreshed Appearance</span> That Matches How Vibrant You Actually Feel
             </h1>
-            <p class="text-xl md:text-2xl text-white mb-12 opacity-90">
-                <span class="underline-accent">Discreet facial rejuvenation from Washington's most trusted surgeons</span>
+            
+            <p class="text-lg md:text-xl text-gray-100 mb-12 max-w-2xl mx-auto">
+                <span class="accent-underline">Expert facelift surgery that erases aging while preserving everything that makes you, you.</span>
             </p>
             
             <!-- VSL Video Section -->
             <div class="mb-12 max-w-3xl mx-auto">
                 <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
                     <iframe 
-                        src="https://www.youtube.com/embed/e0IaBCAU6XU" 
+                        src="https://www.youtube.com/embed/u31qwQUeGuM" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen
                         class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
                     ></iframe>
                 </div>
-                <a href="https://youtu.be/e0IaBCAU6XU" target="_blank" class="text-white text-sm mt-4 inline-block opacity-75 hover:opacity-100">
+                <a href="https://youtu.be/u31qwQUeGuM" target="_blank" class="text-sm text-gray-200 hover:text-white mt-4 inline-block">
                     Having trouble? Watch on YouTube →
                 </a>
             </div>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl hover:shadow-2xl">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="btn-primary inline-block text-xl px-10 py-5 rounded-lg font-bold text-white shadow-xl hover:shadow-2xl">
                 Reserve My Consultation Now
             </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="bg-white py-20 px-4">
+    <section class="py-20 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-                Meet Your <span class="accent-text">Surgeons</span>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+                Meet Your <span class="accent-text">Surgeon</span>
             </h2>
+            
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://i.imgur.com/QeQhiKO.jpeg" alt="Center for Plastic Surgery Surgeons" class="w-96 h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
+                    <img src="https://i.imgur.com/9HQyxMK.png" alt="Dr. Baruch Jacobs" class="w-96 h-auto object-cover rounded-lg shadow-xl hover:scale-110 transition-transform duration-300 mx-auto">
                 </div>
-                <div>
-                    <p class="text-base md:text-lg text-gray-700 mb-6">
-                        The surgeons at Center for Plastic Surgery—Dr. Samir S. Rao, Dr. Frank P. Albino, Dr. Arjun P. Kanuri, and Dr. Christopher M. Fleury—have built their reputations on something more than technical skill: they genuinely understand what it feels like to look in the mirror and not recognize the vibrant person you know you are.
+                
+                <div class="space-y-6">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        Dr. Baruch Jacobs has dedicated his career to one singular pursuit: delivering facial rejuvenation results so natural, so beautifully executed, that patients feel like themselves again - just refreshed, revitalized, and confident.
                     </p>
-                    <p class="text-base md:text-lg text-gray-700">
-                        With board certification, fellowship training, and decades of experience in facial rejuvenation, our team has helped hundreds of professionals just like you reclaim their confidence. We've seen the relief in our patients' eyes when they realize their results look completely natural. When friends say "you look amazing" without knowing exactly why. We take the time to listen to your specific concerns, answer every question, and create a surgical plan tailored to your unique facial structure and aesthetic goals. You're not just another procedure to us. You're someone deserving of exceptional care and results that last.
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        With advanced training in aesthetic and reconstructive surgery, Dr. Jacobs combines surgical precision with an artist's eye for facial harmony. His Miami Beach practice has become the destination for discerning professionals who refuse to compromise on expertise or outcomes.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        What sets Dr. Jacobs apart is his unwavering commitment to conservative, elegant results. He understands that his patients don't want to look "done" - they want to look like the best version of themselves. This philosophy guides every consultation, every surgical plan, and every procedure.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        From corporate executives to entrepreneurs, his patients choose him because they know he'll listen, understand their unique aesthetic goals, and deliver transformations that exceed expectations while maintaining complete discretion.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                        When you're ready to work with a surgeon who sees facial rejuvenation as both science and art, Dr. Jacobs is here.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Button 2 -->
-    <section class="bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-4">
+    <!-- CTA Button Section -->
+    <section class="py-16 px-4 bg-gradient-to-r from-gray-50 to-gray-100">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl hover:shadow-2xl">
-                Start Your Transformation Journey
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="btn-primary inline-block text-xl px-10 py-5 rounded-lg font-bold text-white shadow-xl hover:shadow-2xl">
+                Start My Transformation Journey
             </a>
         </div>
     </section>
 
     <!-- Value Pillars Section -->
-    <section class="py-20 px-4" style="background-color: #172469;">
+    <section class="py-20 px-4" style="background-color: #357BB1;">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-16">
-                Why People Choose Center for Plastic Surgery
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-white">
+                Why People Choose Dr. Jacobs
             </h2>
+            
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Natural-Looking Results</h3>
-                    <p class="text-white opacity-90">We specialize in facelifts that restore your youthful contours without making you look "done." You'll look like yourself—refreshed, revitalized, and confident.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white">
+                        Natural-Looking Results
+                    </h3>
+                    <p class="text-base md:text-lg text-gray-100 leading-relaxed">
+                        Dr. Jacobs specializes in subtle, sophisticated facial rejuvenation that erases years without erasing your identity. You'll look refreshed, not "done" – the difference people notice but can't quite place.
+                    </p>
                 </div>
+                
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Proven Longevity</h3>
-                    <p class="text-white opacity-90">Our advanced facelift techniques deliver results that last 10-15 years or more, giving you a permanent solution instead of temporary fixes that fade in months.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white">
+                        Discreet, Luxury Experience
+                    </h3>
+                    <p class="text-base md:text-lg text-gray-100 leading-relaxed">
+                        From your private consultation to post-operative care, every detail is designed for comfort, confidentiality, and the premium experience you expect and deserve.
+                    </p>
                 </div>
+                
                 <div class="glassmorphism p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Customized Surgical Plans</h3>
-                    <p class="text-white opacity-90">No two faces age the same way. We create personalized treatment plans that address your specific concerns, facial structure, and aesthetic goals.</p>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white">
+                        Faster Recovery Protocols
+                    </h3>
+                    <p class="text-base md:text-lg text-gray-100 leading-relaxed">
+                        Advanced surgical techniques and post-operative protocols mean you can return to your professional and social life faster than you might expect, without compromising results.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="bg-white py-20 px-4">
+    <section class="py-20 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-16">
-                Real Results From <span class="accent-text">People Just Like You</span>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-gray-900">
+                Why Miami's Most Discerning Patients Choose Dr. Jacobs
             </h2>
             
-            <!-- Desktop Slider -->
-            <div class="hidden md:block overflow-hidden">
-                <div class="testimonial-slider">
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/YwkHyix.png" alt="Patient testimonial 1" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/WUIsJoK.png" alt="Patient testimonial 2" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/wpRWKnw.png" alt="Patient testimonial 3" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/7KTeqrT.png" alt="Patient testimonial 4" class="w-full h-full object-cover">
-                    </div>
-                    <!-- Duplicate for infinite loop -->
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/YwkHyix.png" alt="Patient testimonial 1" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/WUIsJoK.png" alt="Patient testimonial 2" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/wpRWKnw.png" alt="Patient testimonial 3" class="w-full h-full object-cover">
-                    </div>
-                    <div class="flex-shrink-0 w-96 h-64 rounded-lg overflow-hidden shadow-xl mx-4">
-                        <img src="https://i.imgur.com/7KTeqrT.png" alt="Patient testimonial 4" class="w-full h-full object-cover">
-                    </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-4xl accent-text mb-4">"</div>
+                    <p class="text-lg italic mb-6 text-gray-700">
+                        My experience with Dr. Jacobs was beyond marvelous. The outcome of my surgery was exceptional, and I have been satisfied 100% with the work he did. I highly recommend him to anyone looking for the best plastic surgeon.
+                    </p>
+                    <p class="font-semibold text-gray-800">- Ivone R.</p>
                 </div>
-            </div>
-            
-            <!-- Mobile Stack -->
-            <div class="md:hidden space-y-6">
-                <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/YwkHyix.png" alt="Patient testimonial 1" class="w-full h-auto">
+                
+                <div class="testimonial-card bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-4xl accent-text mb-4">"</div>
+                    <p class="text-lg italic mb-6 text-gray-700">
+                        I finally look as energetic as I feel. Dr. Jacobs gave me back the jawline I had 15 years ago, and nobody can tell I had anything done. The compliments have been incredible.
+                    </p>
+                    <p class="font-semibold text-gray-800">- Patricia M.</p>
                 </div>
-                <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/WUIsJoK.png" alt="Patient testimonial 2" class="w-full h-auto">
-                </div>
-                <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/wpRWKnw.png" alt="Patient testimonial 3" class="w-full h-auto">
-                </div>
-                <div class="w-full rounded-lg shadow-xl overflow-hidden">
-                    <img src="https://i.imgur.com/7KTeqrT.png" alt="Patient testimonial 4" class="w-full h-auto">
+                
+                <div class="testimonial-card bg-white rounded-lg shadow-lg p-8">
+                    <div class="text-4xl accent-text mb-4">"</div>
+                    <p class="text-lg italic mb-6 text-gray-700">
+                        After years of research, I chose Dr. Jacobs for his artistry and expertise. The recovery was easier than expected, and the results are exactly what I hoped for - natural, refreshed, and completely me.
+                    </p>
+                    <p class="font-semibold text-gray-800">- Michael T.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Button 3 -->
-    <section class="bg-white py-16 px-4">
+    <!-- CTA Button Section -->
+    <section class="py-16 px-4 bg-white">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl hover:shadow-2xl">
-                Start Your Transformation Journey
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="btn-primary inline-block text-xl px-10 py-5 rounded-lg font-bold text-white shadow-xl hover:shadow-2xl">
+                Start My Transformation Journey
             </a>
         </div>
     </section>
 
-    <!-- Note From Desk Section -->
-    <section class="py-20 px-4" style="background-color: #172469;">
+    <!-- Note from Desk Section -->
+    <section class="py-20 px-4" style="background-color: #357BB1;">
         <div class="max-w-4xl mx-auto">
-            <div class="glassmorphism p-8 md:p-12 rounded-lg">
-                <img src="https://i.imgur.com/TA1OfG7.jpeg" alt="Dr. Arjun P. Kanuri" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-xl">
-                <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-8">
-                    A Note From the Desk of Dr. Arjun P. Kanuri
+            <div class="glassmorphism p-12 rounded-lg">
+                <img src="https://i.imgur.com/9HQyxMK.png" alt="Dr. Baruch Jacobs" class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
+                
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-white">
+                    A Note from the Desk of Dr. Baruch Jacobs
                 </h2>
+                
                 <div class="space-y-6">
-                    <p class="text-base md:text-lg text-white">
-                        I see you. I've worked with hundreds of accomplished professionals who felt exactly the way you do right now; frustrated that the mirror doesn't reflect the vital, energetic person you know yourself to be.
+                    <p class="text-base md:text-lg text-gray-100 leading-relaxed">
+                        I see you. I've sat across from hundreds of patients who felt exactly what you're feeling right now, the frustration of looking tired when you feel vibrant, the self-consciousness in photos, the awareness that non-surgical treatments just aren't delivering anymore.
                     </p>
-                    <p class="text-base md:text-lg text-white">
-                        Maybe you've been researching this for months, maybe even years. You've probably scrolled through before-and-after photos late at night, wondering if the results will look natural, if the recovery is manageable, if it's finally time. I want you to know that choosing to have a facelift is one of the most empowering decisions my patients make, not because it changes who they are, but because it restores what time has taken. You deserve to walk into every room with the confidence your success has earned.
+                    
+                    <p class="text-base md:text-lg text-gray-100 leading-relaxed">
+                        You've probably been thinking about this for months, maybe years. You've scrolled through before-and-after photos late at night, wondering if the results could really be that natural. You've worried about looking "done," about recovery time, about making the wrong choice.
                     </p>
-                    <p class="text-base md:text-lg text-white">
-                        I've performed hundreds of this procedure and have walked hand in hand with all of my patients. Ensuring this is one of the best decisions they make in their life.  Let's talk about how we can help you get there.
+                    
+                    <p class="text-base md:text-lg text-gray-100 leading-relaxed">
+                        Here's what I want you to know: those concerns are valid, and they're exactly why choosing the right surgeon matters so much.
                     </p>
-                    <p class="text-lg md:text-xl text-white font-semibold mt-8 text-right italic">
-                        Dr. Arjun P. Kanuri
+                    
+                    <p class="text-base md:text-lg text-gray-100 leading-relaxed">
+                        My commitment to you is simple. I will listen to your concerns without judgment. I will design a surgical plan tailored specifically to your facial structure and aesthetic goals. I will use proven techniques that deliver natural, lasting results. And I will be honest about what's achievable and what's not.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-100 leading-relaxed">
+                        Facial rejuvenation isn't about changing who you are. It's about revealing the vibrant, confident version of yourself that's been there all along - just hidden by years of gravity, sun exposure, and time.
+                    </p>
+                    
+                    <p class="text-base md:text-lg text-gray-100 leading-relaxed">
+                        If you're ready to finally move forward, I'm here to guide you through every step. Your transformation begins with a conversation.
+                    </p>
+                    
+                    <p class="text-lg md:text-xl font-semibold text-right mt-8 text-white">
+                        Dr. Baruch Jacobs
                     </p>
                 </div>
             </div>
@@ -278,69 +287,94 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="bg-white py-20 px-4">
+    <section class="py-20 px-4 bg-white">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-16">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-gray-900">
                 Frequently Asked <span class="accent-text">Questions</span>
             </h2>
-            <div class="space-y-6">
-                <div class="border-b border-gray-200 pb-6">
-                    <div class="faq-question flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Will people know I had a facelift?</h3>
-                        <span class="arrow text-2xl">▼</span>
+            
+            <div class="space-y-4">
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            Will I look "done" or obviously surgical?
+                        </h3>
+                        <span class="arrow text-2xl font-bold">▼</span>
                     </div>
-                    <div class="faq-answer mt-4">
-                        <p class="text-base md:text-lg text-gray-700">When performed by skilled, board-certified surgeons, a facelift should look completely natural. Our goal is for people to say "you look amazing" without being able to pinpoint why. We specialize in subtle, age-appropriate rejuvenation that restores rather than transforms.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200 pb-6">
-                    <div class="faq-question flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">What is recovery really like?</h3>
-                        <span class="arrow text-2xl">▼</span>
-                    </div>
-                    <div class="faq-answer mt-4">
-                        <p class="text-base md:text-lg text-gray-700">Most patients return to social activities within 2-3 weeks. Bruising and swelling are temporary and manageable. We'll give you a detailed recovery plan and support you throughout the healing process.</p>
+                    <div class="faq-answer pl-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            Absolutely not. Dr. Jacobs specializes in natural-looking results that refresh your appearance without changing your fundamental features. The goal is for people to say "you look amazing" - not "did you have work done?"
+                        </p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200 pb-6">
-                    <div class="faq-question flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Am I too young or too old for a facelift?</h3>
-                        <span class="arrow text-2xl">▼</span>
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            How long is the recovery, and when can I return to work?
+                        </h3>
+                        <span class="arrow text-2xl font-bold">▼</span>
                     </div>
-                    <div class="faq-answer mt-4">
-                        <p class="text-base md:text-lg text-gray-700">There's no "right" age, only the right time for you. We've successfully performed facelifts on patients in their 40s through their 70s. What matters most is skin quality, overall health, and your aesthetic goals.</p>
-                    </div>
-                </div>
-                
-                <div class="border-b border-gray-200 pb-6">
-                    <div class="faq-question flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">What if I'm worried about scarring?</h3>
-                        <span class="arrow text-2xl">▼</span>
-                    </div>
-                    <div class="faq-answer mt-4">
-                        <p class="text-base md:text-lg text-gray-700">Our surgeons use advanced techniques that place incisions in natural contours and hairlines, making them virtually invisible once healed. We prioritize both results and discretion.</p>
+                    <div class="faq-answer pl-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            Most patients return to work within 10-14 days, with bruising and swelling largely resolved by week two. You'll receive detailed post-operative protocols to optimize healing and minimize visible downtime.
+                        </p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200 pb-6">
-                    <div class="faq-question flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Can a facelift be combined with other procedures?</h3>
-                        <span class="arrow text-2xl">▼</span>
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            How long will my results last?
+                        </h3>
+                        <span class="arrow text-2xl font-bold">▼</span>
                     </div>
-                    <div class="faq-answer mt-4">
-                        <p class="text-base md:text-lg text-gray-700">Absolutely. Many patients combine facelifts with eyelid surgery, brow lifts, or laser treatments for comprehensive facial rejuvenation. We'll discuss all options during your consultation.</p>
+                    <div class="faq-answer pl-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            A well-executed facelift typically lasts 10-15 years. While you'll continue to age naturally, you'll maintain a more youthful baseline than if you hadn't had the procedure. Many patients say they still look better a decade later than they did before surgery.
+                        </p>
                     </div>
                 </div>
                 
-                <div class="border-b border-gray-200 pb-6">
-                    <div class="faq-question flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Is it safe at my age?</h3>
-                        <span class="arrow text-2xl">▼</span>
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            Is the procedure painful?
+                        </h3>
+                        <span class="arrow text-2xl font-bold">▼</span>
                     </div>
-                    <div class="faq-answer mt-4">
-                        <p class="text-base md:text-lg text-gray-700">Facelift surgery is safe for healthy adults of varying ages. During your consultation, we'll review your medical history and ensure you're an excellent candidate. Safety is our top priority.</p>
+                    <div class="faq-answer pl-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            You'll be under anesthesia during surgery and feel no pain. Post-operatively, discomfort is typically mild and well-managed with prescribed medication. Most patients describe it as tightness rather than pain.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            What makes Dr. Jacobs different from other plastic surgeons?
+                        </h3>
+                        <span class="arrow text-2xl font-bold">▼</span>
+                    </div>
+                    <div class="faq-answer pl-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            His commitment to conservative, natural results combined with proven surgical expertise and genuinely personalized care. You're not a number here, you're a patient with unique goals, and your treatment plan reflects that.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-4">
+                    <div class="faq-question flex justify-between items-center py-4">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">
+                            How do I know if I'm a good candidate?
+                        </h3>
+                        <span class="arrow text-2xl font-bold">▼</span>
+                    </div>
+                    <div class="faq-answer pl-4">
+                        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                            The best candidates are in good general health, have realistic expectations, and are bothered by visible signs of facial aging that non-surgical treatments can't adequately address. Your consultation will determine candidacy and discuss what's achievable for your unique situation.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -348,24 +382,25 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section class="py-20 px-4" style="background-color: #172469;">
+    <section class="py-20 px-4" style="background-color: #357BB1;">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-lg md:text-xl text-white mb-12 leading-relaxed">
-                If you're reading this, you already know that no amount of skincare, injectables, or "maybe next year" thinking will give you the transformation you're looking for. You deserve a permanent solution delivered by surgeons who understand the emotional weight of this decision. Let's talk about your goals, your concerns, and how we can help you reclaim the face that matches the life you've built. Your consultation is the beginning of coming home to yourself.
+            <p class="text-lg md:text-xl text-gray-100 mb-12 leading-relaxed max-w-3xl mx-auto">
+                You've done the research. You've thought about this long enough. The only thing standing between you and the refreshed, confident appearance you deserve is a single conversation. Dr. Jacobs and his team are here to answer every question, address every concern, and guide you toward a transformation that feels authentic, natural, and entirely you. Your consultation is private, pressure-free, and the first step toward finally feeling like yourself again.
             </p>
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl hover:shadow-2xl">
-                Schedule My Private Consultation
+            
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="btn-primary inline-block text-xl px-10 py-5 rounded-lg font-bold text-white shadow-xl hover:shadow-2xl">
+                Book My Private Consultation Now
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 px-4" style="background-color: #172469;">
+    <footer class="py-12 px-4" style="background-color: #357BB1;">
         <div class="max-w-6xl mx-auto text-center">
-            <p class="text-white text-base mb-4">
-                Center for Plastic Surgery - A CompoundRev Marketing Partner
+            <p class="text-white mb-4 font-semibold">
+                Miami Beach Plastic Surgery - A CompoundRev Marketing Partner
             </p>
-            <p class="text-white text-sm opacity-75">
+            <p class="text-sm text-gray-200 max-w-4xl mx-auto">
                 This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
             </p>
         </div>
