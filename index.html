@@ -15,11 +15,11 @@
         }
         
         .hero-gradient {
-            background: linear-gradient(135deg, #003388 0%, #002266 100%);
+            background: linear-gradient(135deg, #FFFFFF 0%, #b3b3b3 100%);
         }
         
-        .glass-card {
-            background: rgba(255, 255, 255, 0.1);
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
@@ -30,18 +30,21 @@
         }
         
         .cta-button:hover {
-            background-color: #C89519;
-            transform: translateY(-2px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            background-color: #c49520;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
         
-        .faq-question {
-            cursor: pointer;
-            transition: all 0.3s ease;
+        .image-hover {
+            transition: transform 0.3s ease;
         }
         
-        .faq-question:hover {
-            background-color: #f9fafb;
+        .image-hover:hover {
+            transform: scale(1.1);
+        }
+        
+        .faq-answer {
+            display: none;
+            overflow: hidden;
         }
         
         .arrow {
@@ -49,36 +52,43 @@
             color: #DAA520;
         }
         
-        .testimonial-card {
-            min-height: 280px;
+        .accent-text {
+            color: #DAA520;
         }
         
-        img {
+        .accent-underline {
+            border-bottom: 3px solid #DAA520;
+            display: inline-block;
+            padding-bottom: 2px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
             transition: transform 0.3s ease;
         }
         
-        img:hover {
-            transform: scale(1.05);
+        .testimonial-card:hover {
+            transform: translateY(-5px);
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- HERO SECTION -->
-    <section class="hero-gradient py-16 md:py-24 px-4">
-        <div class="max-w-5xl mx-auto text-center">
-            <p class="text-white text-sm md:text-base mb-4 opacity-90">For Napa Valley professionals who are tired of hiding their smile and ready to reclaim their confidence</p>
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center px-4 py-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-sm md:text-base text-gray-700 mb-4 font-medium">For Napa Valley professionals who are tired of hiding their smile and ready to reclaim their confidence</p>
             
-            <h1 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Finally Eat What You Love, Laugh Without Worry, and Look Years Younger With <span style="color: #DAA520;">Permanent Teeth That Feel Real</span>
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Finally Eat What You Love, Laugh Without Worry, and Look Years Younger With <span class="accent-text">Permanent Teeth That Feel Real</span>
             </h1>
             
-            <p class="text-xl md:text-2xl text-white mb-8 opacity-90">
-                <span style="border-bottom: 3px solid #DAA520; padding-bottom: 2px;">Dr. Devan Dalla's All-on-4 solution transforms lives in one appointment</span>
-            </p>
+            <p class="text-lg md:text-xl text-gray-800 mb-8 accent-underline">Dr. Devan Dalla's All-on-4 solution transforms lives in one appointment</p>
             
-            <!-- VSL VIDEO -->
-            <div class="max-w-4xl mx-auto mb-10">
+            <div class="mb-8 max-w-3xl mx-auto">
                 <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
                     <iframe 
                         src="https://www.youtube.com/embed/x3IX0FDPPhA" 
@@ -88,25 +98,23 @@
                         class="absolute top-0 left-0 w-full h-full rounded-lg shadow-2xl"
                     ></iframe>
                 </div>
-                <p class="text-white text-sm mt-3 opacity-75">
-                    <a href="https://youtu.be/x3IX0FDPPhA" target="_blank" class="hover:underline">Having trouble? Watch on YouTube →</a>
-                </p>
+                <a href="https://youtu.be/x3IX0FDPPhA" target="_blank" class="text-sm text-gray-700 hover:text-gray-900 mt-2 inline-block">Having trouble? Watch on YouTube →</a>
             </div>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl font-bold text-white px-10 py-5 rounded-lg shadow-xl">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl">
                 Schedule My Free Consultation
             </a>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="py-16 md:py-24 px-4 bg-white">
+    <!-- About Section -->
+    <section class="py-16 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12" style="color: #DAA520;">Meet Your Dentist</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-gray-900">Meet Your <span class="accent-text">Dentist</span></h2>
             
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://i.imgur.com/bAYWcMn.jpeg" alt="Dr. Devan Dalla" class="w-96 h-auto object-cover rounded-lg shadow-xl mx-auto">
+                    <img src="https://i.imgur.com/bAYWcMn.jpeg" alt="Dr. Devan Dalla" class="w-96 h-auto object-cover rounded-lg shadow-xl image-hover mx-auto">
                 </div>
                 
                 <div class="space-y-6">
@@ -126,38 +134,38 @@
         </div>
     </section>
 
-    <!-- CTA BUTTON 2 -->
-    <section class="py-12 px-4" style="background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);">
+    <!-- CTA Button 2 -->
+    <section class="py-12 px-4" style="background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(218,165,32,0.1) 100%);">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl font-bold text-white px-10 py-5 rounded-lg shadow-xl">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl">
                 Yes, I Want My Smile Back
             </a>
         </div>
     </section>
 
-    <!-- VALUE PILLARS SECTION -->
-    <section class="py-16 md:py-24 px-4" style="background-color: #003388;">
+    <!-- Value Pillars Section -->
+    <section class="py-16 px-4" style="background-color: #FFFFFF;">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-white">Why People Choose Alora Dentistry</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-gray-900">Why People Choose <span class="accent-text">Alora Dentistry</span></h2>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white">Same-Day Transformation</h3>
-                    <p class="text-base md:text-lg text-white opacity-90 leading-relaxed">
+                <div class="glassmorphism p-8 rounded-lg shadow-xl">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">Same-Day Transformation</h3>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         Walk in with failing teeth or uncomfortable dentures, walk out the same day with a complete, permanent smile. Our advanced All-on-4 technique means you don't wait months for results. You leave our office able to smile, eat soft foods immediately, and start your new life right away.
                     </p>
                 </div>
                 
-                <div class="glass-card p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white">No Bone Grafting Required</h3>
-                    <p class="text-base md:text-lg text-white opacity-90 leading-relaxed">
+                <div class="glassmorphism p-8 rounded-lg shadow-xl">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">No Bone Grafting Required</h3>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         Unlike traditional implants that often require painful bone grafting procedures and months of healing, Dr. Dalla's strategic implant placement works with your existing bone structure. This means fewer procedures, less discomfort, and a faster path to your permanent smile.
                     </p>
                 </div>
                 
-                <div class="glass-card p-8 rounded-lg">
-                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white">Decades of Stability</h3>
-                    <p class="text-base md:text-lg text-white opacity-90 leading-relaxed">
+                <div class="glassmorphism p-8 rounded-lg shadow-xl">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-900">Decades of Stability</h3>
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         These aren't temporary dentures or bridges that need constant adjustment. All-on-4 implants are anchored directly into your jawbone, stimulating bone growth and preventing the deterioration that happens with traditional dentures. This is a long-term investment in your health and confidence.
                     </p>
                 </div>
@@ -165,82 +173,68 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section class="py-16 md:py-24 px-4 bg-gray-50">
+    <!-- Testimonials Section -->
+    <section class="py-16 px-4 bg-gray-50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-gray-900">Lives Changed. Confidence Restored. Smiles Reclaimed.</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-gray-900">Lives Changed. Confidence Restored. <span class="accent-text">Smiles Reclaimed.</span></h2>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-8 testimonial-card">
-                    <div class="text-4xl mb-4" style="color: #DAA520;">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
-                        Had the best experience at Alora Dentistry. Very professional and kind team members. I felt welcomed from walking through the doors till leaving the office. Thank you Alora Dentistry!
-                    </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card">
+                    <div class="text-4xl accent-text mb-4">"</div>
+                    <p class="text-lg italic mb-6 text-gray-700">Had the best experience at Alora Dentistry. Very professional and kind team members. I felt welcomed from walking through the doors till leaving the office. Thank you Alora Dentistry!</p>
                     <p class="font-semibold text-gray-800">- Anthony D.</p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-lg p-8 testimonial-card">
-                    <div class="text-4xl mb-4" style="color: #DAA520;">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
-                        This is a great place to go take care of your teeth. The team was very professional examining and providing with solutions by priority. I had to do tooth extraction and Dr Mandy did a great job, I felt that I was in good hands. All the people here were very gentle and kind to me. They explained very well what was going on. Thanks to Dr. Mandy and her team. :))
-                    </p>
+                <div class="testimonial-card">
+                    <div class="text-4xl accent-text mb-4">"</div>
+                    <p class="text-lg italic mb-6 text-gray-700">This is a great place to go take care of your teeth. The team was very professional examining and providing with solutions by priority. I had to do tooth extraction and Dr Mandy did a great job, I felt that I was in good hands. All the people here were very gentle and kind to me. They explained very well what was going on. Thanks to Dr. Mandy and her team. :))</p>
                     <p class="font-semibold text-gray-800">- Rheca J.</p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-lg p-8 testimonial-card">
-                    <div class="text-4xl mb-4" style="color: #DAA520;">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
-                        I've been to many dentistry's over a long process of me fixing my teeth. It was really hard at first trying to set up long term plans with all my previous dentists but I can say Alora Dentistry has surpass my expectations. From one on ones with your dentist and figure out a plan, to financial reliefs. Alora Dentistry is doing it right. Supper welcoming environment and great hospitality. One hundred percent would recommend Alora Dentistry to anyone who wants to have a great relationship with there dentistry
-                    </p>
+                <div class="testimonial-card">
+                    <div class="text-4xl accent-text mb-4">"</div>
+                    <p class="text-lg italic mb-6 text-gray-700">I've been to many dentistry's over a long process of me fixing my teeth. It was really hard at first trying to set up long term plans with all my previous dentists but I can say Alora Dentistry has surpass my expectations. From one on ones with your dentist and figure out a plan, to financial reliefs. Alora Dentistry is doing it right. Supper welcoming environment and great hospitality. One hundred percent would recommend Alora Dentistry to anyone who wants to have a great relationship with there dentistry</p>
                     <p class="font-semibold text-gray-800">- Armondo D.</p>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-lg p-8 testimonial-card">
-                    <div class="text-4xl mb-4" style="color: #DAA520;">"</div>
-                    <p class="text-lg italic mb-6 text-gray-700 leading-relaxed">
-                        I'm a new patient at Alora Dental. The dentist Dr. Mandy is the best dentist I've ever been to. I'm in my sixties and have been to many many dentist's. Dr. Mandy gives you the most thorough exam, checking all oral health. The staff make you feel welcome and comfortable. I Love this dentist.
-                    </p>
-                    <p class="font-semibold text-gray-800">- Lynn S.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA BUTTON 3 -->
+    <!-- CTA Button 3 -->
     <section class="py-12 px-4 bg-white">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl font-bold text-white px-10 py-5 rounded-lg shadow-xl">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl">
                 Yes, I Want My Smile Back
             </a>
         </div>
     </section>
 
-    <!-- NOTE FROM DESK SECTION -->
-    <section class="py-16 md:py-24 px-4" style="background-color: #003388;">
+    <!-- Note from Desk Section -->
+    <section class="py-16 px-4" style="background-color: #FFFFFF;">
         <div class="max-w-4xl mx-auto">
-            <div class="glass-card p-8 md:p-12 rounded-lg">
-                <img src="https://i.imgur.com/bAYWcMn.jpeg" alt="Dr. Devan Dalla" class="w-20 h-20 rounded-full object-cover mx-auto mb-6 shadow-xl">
+            <div class="glassmorphism p-8 md:p-12 rounded-lg shadow-2xl">
+                <img src="https://i.imgur.com/bAYWcMn.jpeg" alt="Dr. Devan Dalla" class="w-20 h-20 rounded-full object-cover mx-auto mb-4 shadow-xl">
                 
-                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-white">A Note from the Desk of Dr. Devan Dalla</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">A Note from the Desk of <span class="accent-text">Dr. Devan Dalla</span></h2>
                 
                 <div class="space-y-6">
-                    <p class="text-base md:text-lg text-white leading-relaxed">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         I see you. I've worked with hundreds of patients who felt exactly the way you do right now; exhausted from years of dental problems, hesitant after previous disappointments, wondering if this is really the answer you've been searching for.
                     </p>
                     
-                    <p class="text-base md:text-lg text-white leading-relaxed">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         Here's what I want you to know: you're not too far gone, it's not too late, and you absolutely deserve to feel good about your smile again. I've helped patients in their 40s, 50s, 60s, and beyond reclaim not just their teeth, but their confidence, their social lives, and their joy in simple things like eating a meal with family.
                     </p>
                     
-                    <p class="text-base md:text-lg text-white leading-relaxed">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         The All-on-4 treatment isn't magic, it's advanced dental science applied with precision and care. But the results? Those feel like magic to the patients who've been hiding their smiles for years. I've seen people cry tears of relief when they see their new smile for the first time. I've watched them bite into an apple at their follow-up appointment with pure joy on their faces.
                     </p>
                     
-                    <p class="text-base md:text-lg text-white leading-relaxed">
+                    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                         This decision is too important to rush, and I respect that you're taking time to research and understand your options. When you're ready to take the next step, my team and I are here to answer every question, address every concern, and create a personalized plan that's right for you. You deserve to feel like yourself again.
                     </p>
                     
-                    <p class="text-lg md:text-xl font-semibold text-right mt-8 text-white italic">
+                    <p class="text-lg md:text-xl font-semibold text-gray-900 mt-8 italic">
                         Dr. Devan Dalla
                     </p>
                 </div>
@@ -248,90 +242,90 @@
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section class="py-16 md:py-24 px-4 bg-white">
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 bg-white">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-gray-900">Frequently Asked Questions</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 text-gray-900">Frequently Asked <span class="accent-text">Questions</span></h2>
             
             <div class="space-y-4">
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How long does the All-on-4 procedure actually take?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
-                    </div>
-                    <div class="faq-answer px-6 pb-6">
+                <div class="border-b border-gray-200">
+                    <button class="faq-question w-full text-left py-6 flex justify-between items-center hover:text-gray-600 transition-colors">
+                        <span class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How long does the All-on-4 procedure actually take?</span>
+                        <span class="arrow text-2xl flex-shrink-0">↓</span>
+                    </button>
+                    <div class="faq-answer pb-6">
                         <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                             The implant surgery itself typically takes 2-3 hours per arch. You'll receive a temporary set of teeth the same day, allowing you to leave with a complete smile. Your permanent prosthetic is placed after initial healing, usually within a few months.
                         </p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Will I have to go without teeth during treatment?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
-                    </div>
-                    <div class="faq-answer px-6 pb-6">
+                <div class="border-b border-gray-200">
+                    <button class="faq-question w-full text-left py-6 flex justify-between items-center hover:text-gray-600 transition-colors">
+                        <span class="text-lg md:text-xl font-semibold text-gray-800 pr-8">Will I have to go without teeth during treatment?</span>
+                        <span class="arrow text-2xl flex-shrink-0">↓</span>
+                    </button>
+                    <div class="faq-answer pb-6">
                         <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                             Absolutely not. One of the biggest advantages of All-on-4 is that you receive a functional set of temporary teeth on the same day as your surgery. You'll never be without teeth.
                         </p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">I've been told I don't have enough bone for implants. Can All-on-4 still work?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
-                    </div>
-                    <div class="faq-answer px-6 pb-6">
+                <div class="border-b border-gray-200">
+                    <button class="faq-question w-full text-left py-6 flex justify-between items-center hover:text-gray-600 transition-colors">
+                        <span class="text-lg md:text-xl font-semibold text-gray-800 pr-8">I've been told I don't have enough bone for implants. Can All-on-4 still work?</span>
+                        <span class="arrow text-2xl flex-shrink-0">↓</span>
+                    </button>
+                    <div class="faq-answer pb-6">
                         <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                             In most cases, yes. The angled placement of All-on-4 implants maximizes existing bone and often eliminates the need for bone grafting. A 3D scan during your consultation will determine if you're a candidate.
                         </p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How painful is the recovery?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
-                    </div>
-                    <div class="faq-answer px-6 pb-6">
+                <div class="border-b border-gray-200">
+                    <button class="faq-question w-full text-left py-6 flex justify-between items-center hover:text-gray-600 transition-colors">
+                        <span class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How painful is the recovery?</span>
+                        <span class="arrow text-2xl flex-shrink-0">↓</span>
+                    </button>
+                    <div class="faq-answer pb-6">
                         <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                             Most patients report that recovery is far more comfortable than they expected. You'll receive detailed post-op care instructions and medication to manage any discomfort. Many patients return to work within a few days and are eating normally within weeks.
                         </p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">What can I eat after the procedure?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
-                    </div>
-                    <div class="faq-answer px-6 pb-6">
+                <div class="border-b border-gray-200">
+                    <button class="faq-question w-full text-left py-6 flex justify-between items-center hover:text-gray-600 transition-colors">
+                        <span class="text-lg md:text-xl font-semibold text-gray-800 pr-8">What can I eat after the procedure?</span>
+                        <span class="arrow text-2xl flex-shrink-0">↓</span>
+                    </button>
+                    <div class="faq-answer pb-6">
                         <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                             You'll stick to soft foods for the first few weeks while your implants integrate with the bone. After full healing, you can eat virtually anything—steak, apples, corn on the cob—without restrictions.
                         </p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">What's the investment for All-on-4, and do you offer financing?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
-                    </div>
-                    <div class="faq-answer px-6 pb-6">
+                <div class="border-b border-gray-200">
+                    <button class="faq-question w-full text-left py-6 flex justify-between items-center hover:text-gray-600 transition-colors">
+                        <span class="text-lg md:text-xl font-semibold text-gray-800 pr-8">What's the investment for All-on-4, and do you offer financing?</span>
+                        <span class="arrow text-2xl flex-shrink-0">↓</span>
+                    </button>
+                    <div class="faq-answer pb-6">
                         <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                             Treatment investment varies based on your specific needs and chosen materials. We offer flexible financing options to make this life-changing procedure accessible. During your consultation, we'll provide a detailed cost breakdown and discuss payment plans that work for your budget.
                         </p>
                     </div>
                 </div>
                 
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <div class="faq-question p-6 flex justify-between items-center">
-                        <h3 class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How long do All-on-4 implants last?</h3>
-                        <span class="arrow text-2xl font-bold flex-shrink-0">▼</span>
-                    </div>
-                    <div class="faq-answer px-6 pb-6">
+                <div class="border-b border-gray-200">
+                    <button class="faq-question w-full text-left py-6 flex justify-between items-center hover:text-gray-600 transition-colors">
+                        <span class="text-lg md:text-xl font-semibold text-gray-800 pr-8">How long do All-on-4 implants last?</span>
+                        <span class="arrow text-2xl flex-shrink-0">↓</span>
+                    </button>
+                    <div class="faq-answer pb-6">
                         <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                             With proper care, All-on-4 implants can last 20+ years or even a lifetime. The implants themselves integrate permanently with your jawbone. The prosthetic teeth may need minor adjustments over time but are built for long-term durability.
                         </p>
@@ -341,26 +335,26 @@
         </div>
     </section>
 
-    <!-- FINAL CTA SECTION -->
-    <section class="py-16 md:py-24 px-4" style="background-color: #003388;">
+    <!-- Final CTA Section -->
+    <section class="py-16 px-4" style="background-color: #FFFFFF;">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="text-lg md:text-xl text-white mb-8 leading-relaxed">
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
                 You've spent enough time researching, waiting, and wondering if there's a real solution to your dental struggles. There is, and it starts with one conversation. Dr. Dalla and the team at Alora Dentistry have helped hundreds of people just like you move from hiding their smile to living freely again. Your consultation is completely pressure-free: we'll evaluate your situation, answer all your questions, and show you exactly what's possible. The only thing standing between you and the smile you deserve is taking this first step.
             </p>
             
-            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl font-bold text-white px-10 py-5 rounded-lg shadow-xl">
+            <a href="https://api.leadconnectorhq.com/widget/bookings/compoundrev-marketing-audit" class="cta-button inline-block text-xl px-10 py-5 text-white font-bold rounded-lg shadow-xl">
                 Schedule My Consultation Today
             </a>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-8 px-4" style="background-color: #003388;">
+    <!-- Footer -->
+    <footer class="py-8 px-4" style="background-color: #FFFFFF;">
         <div class="max-w-6xl mx-auto text-center">
-            <p class="text-white mb-4 font-semibold">
+            <p class="text-sm text-gray-900 mb-2">
                 Alora Dentistry - A CompoundRev Marketing Partner
             </p>
-            <p class="text-white text-sm opacity-75">
+            <p class="text-xs text-gray-700">
                 This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
             </p>
         </div>
